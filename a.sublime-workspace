@@ -1,0 +1,627 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ve",
+				"vector"
+			],
+			[
+				"ma",
+				"map"
+			],
+			[
+				"whi",
+				"while"
+			],
+			[
+				"for",
+				"for_"
+			],
+			[
+				"s",
+				"split-string\tsplitString"
+			],
+			[
+				"se",
+				"segment-tree\tsimpleSegmentTree"
+			],
+			[
+				"fi",
+				"findLexicographicRank"
+			],
+			[
+				"pr",
+				"prime_vector_sieve"
+			],
+			[
+				"emp",
+				"emplace"
+			],
+			[
+				"pre",
+				"pos_pre"
+			],
+			[
+				"pos",
+				"pos_pre"
+			],
+			[
+				"re",
+				"rep"
+			],
+			[
+				"cnt",
+				"cnt_no"
+			],
+			[
+				"cnt_",
+				"cnt_yes"
+			],
+			[
+				"ri",
+				"running_sum"
+			],
+			[
+				"jay_bh",
+				"jay_bholenath_jay_bholeneth_pok_pok_pok"
+			],
+			[
+				"dis",
+				"dis_from_ori"
+			],
+			[
+				"di",
+				"dis_from_ori"
+			],
+			[
+				"siz",
+				"sizeof"
+			],
+			[
+				"empalc",
+				"emplace_back"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"das",
+				"CodeTimeTracker: Open Dashboard"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"code tim",
+				"Code Time: Dashboard"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indr",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"trail",
+				"Trim Trailing White Space"
+			],
+			[
+				"package re",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"ww",
+				"Word Wrap: Toggle"
+			],
+			[
+				"inden",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"packageres",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"packagere",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"close ",
+				"File: Close All"
+			],
+			[
+				"files",
+				"File: Save All"
+			],
+			[
+				"colo",
+				"UI: Select Color Scheme"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"fodl m",
+				"Fold Comments"
+			],
+			[
+				"comment",
+				"Toggle Comment"
+			],
+			[
+				"fold ",
+				"Code Folding: Fold"
+			],
+			[
+				"color highli",
+				"Preferences: Color Highlight Settings"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"sublime",
+				"SublimeLinter: Goto Error"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"wor",
+				"Word Wrap: Toggle"
+			],
+			[
+				"alignme",
+				"Preferences: Alignment File Settings – User"
+			],
+			[
+				"align",
+				"Preferences: Alignment File Settings – User"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"permu",
+				"Permute Lines: Shuffle"
+			],
+			[
+				"lowee",
+				"Convert Case: Lower Case"
+			],
+			[
+				"ui",
+				"UI: Select Theme"
+			],
+			[
+				"ui ",
+				"UI: Select Color Scheme"
+			],
+			[
+				"ui co",
+				"UI: Select Color Scheme"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"ui colo",
+				"UI: Select Color Scheme"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"select ui",
+				"UI: Select Color Scheme"
+			],
+			[
+				"",
+				"Code Folding: Fold All"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"remoe",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"color sc",
+				"UI: Select Color Scheme"
+			],
+			[
+				"color sch",
+				"UI: Select Color Scheme"
+			],
+			[
+				"open re",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"snipp",
+				"Snippet: cp abhj c++"
+			],
+			[
+				"material",
+				"Material Theme: Configuration"
+			],
+			[
+				"paackag",
+				"Package Control: Install Package"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"idne",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"package res",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"i",
+				"Indexing Status"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 224.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/abj/.software/CodeTime.txt",
+		"/home/abj/Documents/cp/e.cpp",
+		"/home/abj/Documents/learning_cp/codeforces1523A.cpp",
+		"/home/abj/Documents/learning_cp/codeforces1523B.cpp",
+		"/home/abj/Documents/learning_cp/codeforces1523D.cpp",
+		"/home/abj/Documents/learning_cp/codeforces1523C.cpp",
+		"/home/abj/Documents/cp/f.cpp",
+		"/home/abj/Documents/cp/h.cpp",
+		"/home/abj/Documents/cp/g.cpp",
+		"/home/abj/.config/sublime-text-3/Packages/User/cp.sublime-build",
+		"/home/abj/Documents/learning_java/STT_1/src/com/abhj/JavaSoundRecorder.java",
+		"/home/abj/Documents/cp/☗ ● Submit Code - Codeforces.cpp",
+		"/home/abj/Downloads/Telegram Desktop/S01 EP22 of Assassination Classroom @deekshitbunny.mp4",
+		"/home/abj/.config/sublime-text-3/Packages/Material Theme/extras/PlainTasks/Material-Theme-Darker.hidden-tmTheme",
+		"/home/abj/Documents/learning_cp/codeforces1503C.cpp",
+		"/home/abj/.config/sublime-text-3/Packages/jsonschema/dependency-metadata.json",
+		"/home/abj/Documents/cp/heavytemp.cpp",
+		"/home/abj/Documents/cp/segment_tree_lazy.cpp",
+		"/home/abj/Documents/cp/a.cpp",
+		"/home/abj/Documents/cp/c.cpp",
+		"/home/abj/.config/sublime-text-3/Packages/Night Owl/Night Owl - Light.sublime-color-scheme",
+		"/home/abj/.config/sublime-text-3/Packages/User/temp.sublime-completions",
+		"/home/abj/.config/sublime-text-3/Packages/User/cp.sublime-snippet",
+		"/home/abj/Documents/cp/d.cpp",
+		"/home/abj/Documents/cp/cf",
+		"/home/abj/Documents/cp/output.txt",
+		"/home/abj/Documents/cp/input.txt",
+		"/home/abj/Documents/cp/b.cpp",
+		"/home/abj/Documents/cp/segment_tree.cpp",
+		"/home/abj/Documents/learning_cp/codeforces1499D.cpp",
+		"/home/abj/Documents/cp/cp.sublime-workspace",
+		"/home/abj/Documents/learning_cp/codeforces1511D.cpp",
+		"/home/abj/.config/sublime-text-3/Packages/User/Base File.sublime-settings",
+		"/home/abj/Downloads/salesforce-csv/Salesforce-Data.csv",
+		"/home/abj/Documents/learning_cp/atcoder_abc203e.cpp",
+		"/home/abj/Downloads/salesforce-csv/last_name.csv",
+		"/home/abj/Documents/links used",
+		"/home/abj/Downloads/salesforce-csv/female-names",
+		"/home/abj/Downloads/first_and_last_names.csv",
+		"/home/abj/Downloads/babynames-clean.csv",
+		"/home/abj/Downloads/salesforce-csv/male-names",
+		"/home/abj/Downloads/salesforce-csv/100-contacts.csv",
+		"/home/abj/Documents/Salesforce-Data.csv",
+		"/home/abj/Downloads/salesforce-csv/app_c.xlsx",
+		"/home/abj/Documents/cp/Main.java",
+		"/home/abj/Documents/cp/codeforces1515e.cpp",
+		"/home/abj/patch.sh",
+		"/home/abj/tmp_sub_txt",
+		"/home/abj/Downloads/sublime_text_4107.92_amd64_patched/sublime_text",
+		"/opt/sublime_text/sublime_text",
+		"/home/abj/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/abj/Documents/learning_cp/codeforces1529C.cpp",
+		"/home/abj/Documents/learning_cp/atcoder_abc203_a.cpp",
+		"/home/abj/Documents/learning_cp/atcoder_abc203_b.cpp",
+		"/home/abj/Documents/learning_cp/atcoder_abc203_c.cpp",
+		"/home/abj/Documents/learning_cp/atcoder_abc203_d.cpp",
+		"/home/abj/Documents/learning_cp/codeforces1529D.cpp",
+		"/home/abj/.config/sublime-text-3/Packages/Material Theme/schemes/Material-Theme-Palenight.tmTheme",
+		"/home/abj/.config/sublime-text-3/Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+		"/home/abj/.config/sublime-text-3/Packages/Material Theme/Material-Theme.sublime-theme",
+		"/home/abj/.config/sublime-text-3/Packages/Material Theme/schemes/Material-Theme.tmTheme",
+		"/home/abj/Documents/learning_cp/codeforces1526B.cpp",
+		"/home/abj/Documents/learning_cp/atcoder_arc121c.cpp",
+		"/home/abj/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/abj/Documents/learning_cp/codeforces1526D.cpp",
+		"/home/abj/.config/sublime-text-3/Packages/User/google.sublime-snippet",
+		"/home/abj/Documents/cp/codeforces1516D.cpp",
+		"/home/abj/Documents/cp/salesforce_password.cpp",
+		"/home/abj/Downloads/hibernate-distribution-3.6.4.Final-dist/hibernate-distribution-3.6.4.Final/project/hibernate-documentation/quickstart/tutorials/basic/src/test/resources/hibernate.cfg.xml",
+		"/home/abj/Downloads/hibernate-distribution-3.6.4.Final-dist/hibernate-distribution-3.6.4.Final/project/hibernate-documentation/quickstart/tutorials/annotations/src/test/resources/hibernate.cfg.xml",
+		"/home/abj/Downloads/spring-boot-jpa-postgresql-master/src/main/resources/application.properties",
+		"/home/abj/Documents/learning_cp/atcoder_arc087_c.cpp",
+		"/home/abj/Documents/learning_cp/codeforces1517D.cpp",
+		"/home/abj/Documents/cp/codeforces1525D.cpp",
+		"/home/abj/Documents/learning_cp/codeforces1525C.cpp",
+		"/home/abj/Documents/cp/a",
+		"/home/abj/Documents/learning_cp/codeforces1399E2.cpp",
+		"/home/abj/Documents/learning_cp/codeforces1399E2",
+		"/home/abj/Documents/learning_cp/codeforces1453E.cpp",
+		"/home/abj/Documents/learning_cp/codeforces1521E.cpp",
+		"/home/abj/Documents/learning_cp/atcoder_abc200_f.cpp",
+		"/home/abj/Documents/learning_cp/GOLF.cpp",
+		"/home/abj/Documents/cp/SOLBLTY.cpp",
+		"/home/abj/Documents/learning_cp/codechef_may_2021/MODEQ.cpp",
+		"/home/abj/Documents/learning_cp/codechefMODEQ.cpp",
+		"/home/abj/Documents/learning_cp/codechefXOREQUAL.cpp",
+		"/home/abj/Documents/learning_cp/codechef_may_2021/THOUSES.cpp",
+		"/home/abj/Documents/learning_cp/codechef_may_2021/XOREQ.cpp",
+		"/home/abj/Documents/learning_cp/codechef_may_2021/VPATH.cpp",
+		"/home/abj/Documents/learning_cp/codechefTCTCTOE.cpp",
+		"/home/abj/Documents/learning_cp/codechefVPATH.cpp",
+		"/home/abj/Documents/cp/runfile",
+		"/home/abj/Documents/learning_cp/codechef_may_2021/ISS.java",
+		"/home/abj/.config/sublime-text-3/Packages/User/cp_java.sublime-snippet",
+		"/home/abj/Documents/learning_cp/codechef_may_2021/TCTCTOE.cpp",
+		"/home/abj/Documents/cp/C_Ringo_s_Favorite_Numbers_2.cpp",
+		"/home/abj/Documents/learning_cp/codeforces1520G.cpp",
+		"/home/abj/Documents/cp/15210.cpp",
+		"/home/abj/.config/sublime-text-3/Packages/User/ulrich_nielsen.sublime-snippet",
+		"/home/abj/Documents/cp/output.out",
+		"/home/abj/Documents/cp/input.in"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 652.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 220.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/cp.sublime-build",
+	"project": "a.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"codeforces1515e.cpp"
+			],
+			[
+				"d.cpp",
+				"d.cpp"
+			],
+			[
+				"e.cpp",
+				"e.cpp"
+			],
+			[
+				"b.c",
+				"b.cpp"
+			],
+			[
+				"a.cpp",
+				"a.cpp"
+			],
+			[
+				"b.cpp",
+				"b.cpp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 55.0,
+		"last_filter": "spf",
+		"selected_items":
+		[
+			[
+				"spf",
+				"simplify_fraction"
+			],
+			[
+				"powM",
+				"powM"
+			],
+			[
+				"",
+				"powM"
+			],
+			[
+				"fact",
+				"calc_fact"
+			]
+		],
+		"width": 521.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 142.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
