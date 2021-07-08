@@ -87,6 +87,76 @@
 	},
 	"buffers":
 	[
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 60,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"insert",
+					{
+						"characters": "/"
+					},
+					"AQAAAC8AAAAAAAAAMAAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAC8AAAAAAAAALwAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					4,
+					1,
+					"insert",
+					{
+						"characters": "saved"
+					},
+					"BQAAADAAAAAAAAAAMQAAAAAAAAAAAAAAMQAAAAAAAAAyAAAAAAAAAAAAAAAyAAAAAAAAADMAAAAAAAAAAAAAADMAAAAAAAAANAAAAAAAAAAAAAAANAAAAAAAAAA1AAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAADAAAAAAAAAAMAAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					5,
+					1,
+					"delete_word",
+					{
+						"forward": false
+					},
+					"AQAAADAAAAAAAAAAMAAAAAAAAAAFAAAAc2F2ZWQ",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAADUAAAAAAAAANQAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					6,
+					1,
+					"left_delete",
+					null,
+					"AQAAAC8AAAAAAAAALwAAAAAAAAABAAAALw",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAADAAAAAAAAAAMAAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": "saved"
+					},
+					"BQAAAC8AAAAAAAAAMAAAAAAAAAAAAAAAMAAAAAAAAAAxAAAAAAAAAAAAAAAxAAAAAAAAADIAAAAAAAAAAAAAADIAAAAAAAAAMwAAAAAAAAAAAAAAMwAAAAAAAAA0AAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAC8AAAAAAAAALwAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					8,
+					1,
+					"insert",
+					{
+						"characters": "_files/"
+					},
+					"BwAAADQAAAAAAAAANQAAAAAAAAAAAAAANQAAAAAAAAA2AAAAAAAAAAAAAAA2AAAAAAAAADcAAAAAAAAAAAAAADcAAAAAAAAAOAAAAAAAAAAAAAAAOAAAAAAAAAA5AAAAAAAAAAAAAAA5AAAAAAAAADoAAAAAAAAAAAAAADoAAAAAAAAAOwAAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAADQAAAAAAAAANAAAAAAAAAAAAAAAAADwvw"
+				]
+			]
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -460,7 +530,7 @@
 	],
 	"find":
 	{
-		"height": 22.0
+		"height": 29.0
 	},
 	"find_in_files":
 	{
@@ -495,12 +565,42 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": ".gitignore",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 60,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								59,
+								59
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 22.0
+		"height": 29.0
 	},
 	"input":
 	{
@@ -541,7 +641,7 @@
 	"project": "a.sublime-project",
 	"replace":
 	{
-		"height": 40.0
+		"height": 54.0
 	},
 	"save_all_on_build": true,
 	"select_file":
