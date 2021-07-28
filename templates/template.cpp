@@ -604,16 +604,12 @@ pii crt_solution(const vi &r, const vi &m) {
 // }
 //spf
 void Sieve() {
-	rep(i, 2, N - 1) {
+	for (int i = 2; i <= N - 1; i++) {
 		if (sp[i] == 0) {
 			for (int j = i; j < N; j += i) {
 				sp[j] = i;
 			}
 		}
-	}
-	rep(i, 2, N - 1) {
-		koi[i] = koi[i / sp[i]] + (sp[i / sp[i]] != sp[i]);
-		// koi is number of prime factors of i
 	}
 }
 vi fact(int n) {
