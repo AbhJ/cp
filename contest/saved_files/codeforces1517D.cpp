@@ -1,0 +1,91 @@
+//Coded by Abhijay Mitra (AbJ)
+#include "bits/stdc++.h"
+#define double long double
+#define int long long int
+#define ll int
+#define ibs ios_base::sync_with_stdio(false)
+#define cti cin.tie(0)
+#define bp __builtin_popcount
+#define pb emplace_back
+#define koto_memory(a) cout << (sizeof(a) / 1048576.0) << " MB";
+#define res(v) sort(all(v)), v.erase(unique(all(v)), v.end());
+#define timer cerr << "Time elapsed : " << 1.0 * clock() / CLOCKS_PER_SEC << " sec " << endl;
+#define deb(x) cout << "\n"                           \
+<< "[" << #x << " = " << x << "]" \
+<< "\n";
+using vi = std::vector<int>;
+using vvi = std::vector<vi>;
+using pii = std::pair<int, int>;
+using vpii = std::vector<pii>;
+using vvpii = std::vector<vpii>;
+// mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+// int pos = uniform_int_distribution<int>(l,r)(rng);
+#define mp make_pair
+#define rep(i, a, b) for (int i = a; i <= b; i++)
+#define per(i, b, a) for (int i = b; i >= a; i--)
+#define all(x) x.begin(), x.end()
+using namespace std;
+const int inf = 1e18 + 10;
+// const double Pi = M_PI;
+// const int M = 998244353;
+// const int M = 1e9+7;
+#define F first
+#define S second
+const int N = 5e2 + 10;
+int a[N][N], n, m, k, taka, ans, tmp, b[N][N], c[N][N][11], vis[N][N], X, Y;
+int ok(int X, int Y){
+    return (X >= 1 and Y >= 1 and X <= n and Y <= m);
+}
+void solve() {
+    cin >> n >> m >> k;
+    rep(i, 1, n){
+        rep(j, 1, m - 1){
+            cin >> a[i][j];
+        }
+    }
+    rep(i, 1, n - 1){
+        rep(j, 1, m){
+            cin >> b[i][j];
+        }
+    }
+    rep(i, 1, n){
+        rep(j, 1, m){
+            rep(K, 1, 10){
+                c[i][j][K] = inf;
+            }
+        }
+    }
+    rep(K, 1, k >> 1){
+        rep(i, 1, n){
+            rep(j, 1, m){
+                if(ok(i + 1, j))
+                    c[i][j][K] = min(c[i][j][K], c[i + 1][j][K - 1] + b[i][j]); 
+                if(ok(i - 1, j))
+                    c[i][j][K] = min(c[i][j][K], c[i - 1][j][K - 1] + b[i - 1][j]); 
+                if(ok(i, j + 1))
+                    c[i][j][K] = min(c[i][j][K], c[i][j + 1][K - 1] + a[i][j]); 
+                if(ok(i, j - 1))
+                    c[i][j][K] = min(c[i][j][K], c[i][j - 1][K - 1] + a[i][j - 1]); 
+            }
+        }
+    }
+    rep(i, 1, n){
+        rep(j, 1, m){
+            cout << ((c[i][j][k >> 1] == inf or k & 1LL) ? - 1 : c[i][j][k >> 1] << 1) << " ";
+        }
+        cout << "\n";
+    }
+}
+int32_t main() {
+    ibs;cti;
+    solve(); return 0;
+    int xx = 0;
+    int t;
+    cin >> t;
+    while (t--) {
+        xx++;
+        solve();
+        cout << "\n";
+    }
+    return 0;
+}
