@@ -12,19 +12,25 @@ using vvpii    =     std::vector<vpii>;
 using namespace std;
 const int inf  =     1e18 + 10;
 const int N    =     2e6 + 10;
-int n, a[N];
+// WE SHOULD TRY TO REDUCE ALL TO
+// 0 <= X <= SMALLEST NUMBER
+// OR RATHER {0, SMALLEST NUMBER}
+int n, a[N], mi = inf, tot_mi = inf;
 void solve() {
 	cin >> n;
-	map<int, int>m;
 	for (int i = 1; i <= n; i++) {
 		cin >> a[i];
-		m[a[i]]++;
+		mi = min(mi, a[i]);
 	}
-	int cnt = 0;
-	for (auto [x, y] : m) {
-		cnt += min(x - 1, y);
-	}
-	cout << cnt;
+	for (int i = 1; i <= n; i++)
+		if (a[i] != mi) {
+			tot_mi = min(tot_mi, ((a[i] + 1) >> 1) - 1);
+		}
+	if (mi > tot_mi)
+		cout << n;
+	else
+		cout << n - count(a + 1, a + 1 + n, mi);
+	mi = tot_mi = inf;
 }
 int32_t main() {
 	ios_base::sync_with_stdio(false); cin.tie(0);
