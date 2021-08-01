@@ -1,0 +1,1019 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"j",
+				"abhj Single Test"
+			],
+			[
+				"de",
+				"debug"
+			],
+			[
+				"be",
+				"beginend"
+			],
+			[
+				"ta",
+				"koita"
+			],
+			[
+				"per",
+				"pre_str"
+			],
+			[
+				"pe",
+				"pre_str"
+			],
+			[
+				"begi",
+				"beginend"
+			],
+			[
+				"rd",
+				"red_points"
+			],
+			[
+				"re",
+				"rep"
+			],
+			[
+				"r",
+				"range_query"
+			],
+			[
+				"a",
+				"abhj Multiple Test"
+			],
+			[
+				"cp",
+				"cp duplicate"
+			],
+			[
+				"rep",
+				"repeaterIndex"
+			],
+			[
+				"repe",
+				"repeaterIndex"
+			],
+			[
+				"s",
+				"string"
+			],
+			[
+				"ss",
+				"wonderfulSubstrings"
+			],
+			[
+				"int",
+				"fprintf"
+			],
+			[
+				"t",
+				"string"
+			],
+			[
+				"m",
+				"main"
+			],
+			[
+				"ke",
+				"keep2"
+			],
+			[
+				"rem",
+				"remo2"
+			],
+			[
+				"kee",
+				"keep2"
+			],
+			[
+				"c",
+				"c"
+			],
+			[
+				"e",
+				"erase"
+			],
+			[
+				"debu",
+				"debug"
+			],
+			[
+				"co",
+				"cour"
+			],
+			[
+				"abh",
+				"abhj Multiple Test"
+			],
+			[
+				"fo",
+				"forv"
+			],
+			[
+				"by_",
+				"by_x"
+			],
+			[
+				"ab",
+				"abhj Multiple Test"
+			],
+			[
+				"ve",
+				"vector"
+			],
+			[
+				"ma",
+				"map"
+			],
+			[
+				"whi",
+				"while"
+			],
+			[
+				"for",
+				"for_"
+			],
+			[
+				"se",
+				"segment-tree\tsimpleSegmentTree"
+			],
+			[
+				"fi",
+				"findLexicographicRank"
+			],
+			[
+				"pr",
+				"prime_vector_sieve"
+			],
+			[
+				"emp",
+				"emplace"
+			],
+			[
+				"pre",
+				"pos_pre"
+			],
+			[
+				"pos",
+				"pos_pre"
+			],
+			[
+				"cnt",
+				"cnt_no"
+			],
+			[
+				"cnt_",
+				"cnt_yes"
+			],
+			[
+				"ri",
+				"running_sum"
+			],
+			[
+				"jay_bh",
+				"jay_bholenath_jay_bholeneth_pok_pok_pok"
+			],
+			[
+				"dis",
+				"dis_from_ori"
+			],
+			[
+				"di",
+				"dis_from_ori"
+			],
+			[
+				"siz",
+				"sizeof"
+			],
+			[
+				"empalc",
+				"emplace_back"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/cp.sublime-build",
+					""
+				],
+				[
+					"Packages/User/cp.sublime-build",
+					"Variant Run"
+				]
+			],
+			[
+				"Packages/User/cp.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"colo",
+				"UI: Select Color Scheme"
+			],
+			[
+				"colo\\",
+				"UI: Select Color Scheme"
+			],
+			[
+				"them",
+				"UI: Select Theme"
+			],
+			[
+				"the",
+				"UI: Select Theme"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"mat",
+				"Material Theme: Activate theme"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			],
+			[
+				"GIT pus",
+				"Git: Push"
+			],
+			[
+				"GIT co",
+				"Git: Commit"
+			],
+			[
+				"GIT add",
+				"Git: Add All"
+			],
+			[
+				"git pus",
+				"Git: Push"
+			],
+			[
+				"git comm",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"git a",
+				"Git: Add All"
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add All"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"upp",
+				"Convert Case: Upper Case"
+			],
+			[
+				"track",
+				"CodeTimeTracker: Open Dashboard"
+			],
+			[
+				"tra",
+				"Trim Trailing White Space"
+			],
+			[
+				"INSTA",
+				"Package Control: Install Package"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"us",
+				"UI: Select Theme"
+			],
+			[
+				"LOW",
+				"Convert Case: Lower Case"
+			],
+			[
+				"uppe",
+				"Convert Case: Upper Case"
+			],
+			[
+				"ope",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"ww",
+				"Word Wrap: Toggle"
+			],
+			[
+				"isnta",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"uope",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"reso",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"highli",
+				"HighlightWords: Toggle Settings"
+			],
+			[
+				"docu",
+				"Tasks: New document"
+			],
+			[
+				"docume",
+				"Tasks: New document"
+			],
+			[
+				"new ",
+				"Tasks: New"
+			],
+			[
+				"tesk",
+				"Tasks: Open Link"
+			],
+			[
+				"linter",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"open",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"trac",
+				"CodeTimeTracker: Open Dashboard"
+			],
+			[
+				"color s ",
+				"UI: Select Color Scheme"
+			],
+			[
+				"open re",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"open r",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"open reso",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"snippe",
+				"Snippet: For Loop"
+			],
+			[
+				"revers",
+				"Permute Lines: Reverse"
+			],
+			[
+				"sort",
+				"Sort Lines"
+			],
+			[
+				"col",
+				"Color Picker"
+			],
+			[
+				"color p",
+				"Color Picker"
+			],
+			[
+				"code time",
+				"CodeTimeTracker: Open Dashboard"
+			],
+			[
+				"tracke",
+				"CodeTimeTracker: Open Dashboard"
+			],
+			[
+				"teacke",
+				"CodeTimeTracker: Open Dashboard"
+			],
+			[
+				"codeti",
+				"Code Time: Show Tree View"
+			],
+			[
+				"openre",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"opw",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"time",
+				"Code Time: Show Tree View"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"idne",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inden",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"idne'",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indr",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"trail",
+				"Trim Trailing White Space"
+			],
+			[
+				"package re",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"packageres",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"packagere",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"close ",
+				"File: Close All"
+			],
+			[
+				"files",
+				"File: Save All"
+			],
+			[
+				"fodl m",
+				"Fold Comments"
+			],
+			[
+				"comment",
+				"Toggle Comment"
+			],
+			[
+				"fold ",
+				"Code Folding: Fold"
+			],
+			[
+				"color highli",
+				"Preferences: Color Highlight Settings"
+			],
+			[
+				"sublime",
+				"SublimeLinter: Goto Error"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"wor",
+				"Word Wrap: Toggle"
+			],
+			[
+				"alignme",
+				"Preferences: Alignment File Settings – User"
+			],
+			[
+				"align",
+				"Preferences: Alignment File Settings – User"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"permu",
+				"Permute Lines: Shuffle"
+			],
+			[
+				"lowee",
+				"Convert Case: Lower Case"
+			],
+			[
+				"ui",
+				"UI: Select Theme"
+			],
+			[
+				"ui ",
+				"UI: Select Color Scheme"
+			],
+			[
+				"ui co",
+				"UI: Select Color Scheme"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"ui colo",
+				"UI: Select Color Scheme"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"select ui",
+				"UI: Select Color Scheme"
+			],
+			[
+				"",
+				"Code Folding: Fold All"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"remoe",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"color sc",
+				"UI: Select Color Scheme"
+			],
+			[
+				"color sch",
+				"UI: Select Color Scheme"
+			],
+			[
+				"snipp",
+				"Snippet: cp abhj c++"
+			],
+			[
+				"material",
+				"Material Theme: Configuration"
+			],
+			[
+				"paackag",
+				"Package Control: Install Package"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"package res",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"i",
+				"Indexing Status"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 224.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/abj/Documents/learning_kotlin"
+	],
+	"file_history":
+	[
+		"/home/abj/Documents/cp/contest/saved_files/codeforces1030D.cpp",
+		"/home/abj/Documents/cp/contest/rules_of_life.txt",
+		"/home/abj/Documents/cp/contest/saved_files/codechefMODEQUAL.cpp",
+		"/home/abj/Documents/cp/contest/codeforces1554B.cpp",
+		"/home/abj/Documents/cp/contest/saved_files/codeforces1554D.cpp",
+		"/home/abj/Documents/cp/contest/saved_files/codeforces1554C.cpp",
+		"/home/abj/Documents/cp/contest/saved_files/codeforces1554A.cpp",
+		"/home/abj/Documents/cp/contest/a.cpp",
+		"/home/abj/Documents/cp/.gitignore",
+		"/home/abj/Documents/cp/contest/saved_files/README.md",
+		"/home/abj/Documents/cp/contest/saved_files/codeforces301A.cpp",
+		"/home/abj/Documents/cp/templates/template.cpp",
+		"/home/abj/Documents/cp/contest/saved_files/codeforces7C.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces652D.cpp",
+		"/home/abj/Documents/cp/saved_files/abc204_a.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1225D.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces612D.cpp",
+		"/home/abj/Documents/cp/saved_files/atcoder_arc124b.cpp",
+		"/home/abj/Documents/cp/contest/.a.cpp.swp",
+		"/home/abj/Documents/cp/saved_files/atcoder_arc124a.cpp",
+		"/home/abj/Documents/cp/saved_files/atcoder_abc211e.cpp",
+		"/home/abj/Documents/cp/saved_files/atcoder_abc211b.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1538E.cpp",
+		"/home/abj/Documents/cp/templates/atcoder documentation/test/unittest/string_test.cpp",
+		"/home/abj/Documents/BTP/Plane Drawing/Triangle Voxelization/a.obj",
+		"/home/abj/Documents/cp/saved_files/codeforces1552C.cpp",
+		"/tmp/mozilla_abj0/codeforces1547G.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1547G.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1552D.cpp",
+		"/home/abj/Documents/cp/contest/c.cpp",
+		"/home/abj/Documents/cp/contest/b.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1553E.cpp",
+		"/home/abj/.config/sublime-text-3/Packages/User/bfs.sublime-snippet",
+		"/home/abj/Documents/cp/saved_files/codeforces1547F.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1538F.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1551E.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1551D1.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1551B2.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1551D1.pdf",
+		"/home/abj/Documents/cp/contest/d.cpp",
+		"/home/abj/Documents/cp/contest/f.cpp",
+		"/home/abj/Documents/cp/contest/e.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1551C.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1551B1.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1551A.cpp",
+		"/home/abj/.config/sublime-text-3/Packages/User/ulrich_nielsen.sublime-snippet",
+		"/home/abj/Documents/cp/contest/h.cpp",
+		"/home/abj/Documents/cp/contest/g.cpp",
+		"/home/abj/Documents/cp/saved_files/leetcode/1911.cpp",
+		"/home/abj/Documents/cp/saved_files/leetcode/1910.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1536E.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1537E2.cpp",
+		"/home/abj/Documents/cp/untitled",
+		"/home/abj/Documents/cp/saved_files/leetcode/1915.cpp",
+		"/home/abj/Documents/cp/saved_files/abc204_b.cpp",
+		"/home/abj/Documents/cp/saved_files/abc204_e.cpp",
+		"/home/abj/Documents/cp/contest/bits/stdc++.h.gch",
+		"/home/abj/.config/sublime-text-3/Packages/User/Function Name Display.sublime-settings",
+		"/home/abj/.config/sublime-text-3/Packages/User/ClangAutoComplete.sublime-settings",
+		"/home/abj/.config/sublime-text-3/Packages/ClangAutoComplete/ClangAutoComplete.sublime-settings",
+		"/home/abj/.config/sublime-text-3/Packages/Function Name Display/Function Name Display.sublime-settings",
+		"/home/abj/Documents/cp/saved_files/leetcode/1928.cpp",
+		"/home/abj/Documents/cp/contest/1928.cpp",
+		"/home/abj/Documents/cp/saved_files/leetcode/1921.cpp",
+		"/home/abj/Documents/cp/contest/output.txt",
+		"/home/abj/Documents/cp/saved_files/atcoder_abc210d.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1530E.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1530D.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1530C.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1530B.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1530A.cpp",
+		"/home/abj/Documents/cp/saved_files/leetcode/1935.cpp",
+		"/home/abj/Documents/cp/saved_files/leetcode/1936.cpp",
+		"/home/abj/Documents/cp/saved_files/leetcode/1937.cpp",
+		"/home/abj/Downloads/Leetcode-Submission-Downloader-master/leetcodeDownloader.py",
+		"/home/abj/.config/sublime-text-3/Packages/User/Mariana.sublime-color-scheme",
+		"/home/abj/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/abj/Downloads/Leetcode-Submission-Downloader-master/leetcodeHTTPHelper.pyc",
+		"/home/abj/Documents/cp/saved_files/abc210_b.cpp",
+		"/home/abj/Documents/cp/contest/abc210_c.cpp",
+		"/home/abj/Documents/cp/saved_files/abc210_a.cpp",
+		"/home/abj/Documents/cp/saved_files/leetcode/1922.cpp",
+		"/home/abj/Documents/cp/saved_files/leetcode/1927.pdf",
+		"/home/abj/Documents/cp/saved_files/leetcode/1926.cpp",
+		"/home/abj/Documents/cp/saved_files/leetcode/1927.cpp",
+		"/home/abj/Documents/cp/saved_files/leetcode/1411.cpp",
+		"/home/abj/Documents/cp/saved_files/leetcode/1931.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1550A.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1550B.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1550C.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1546D.cpp",
+		"/home/abj/.config/sublime-text-3/Packages/PlainTasks/Default (Linux).sublime-keymap",
+		"/home/abj/.config/sublime-text-3/Packages/HighlightWords/HighlightWords.sublime-settings",
+		"/home/abj/.config/sublime-text-3/Packages/User/HighlightWords.sublime-settings",
+		"/home/abj/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/usr/local/lib/python3.8/dist-packages/leetcodecli/cli.py",
+		"/home/abj/Documents/cp/stress_test/a.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1546A.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1546B.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1546C.cpp",
+		"/home/abj/Documents/cp/saved_files/abc204_c.cpp",
+		"/home/abj/Documents/cp/contest/input.txt",
+		"/home/abj/Documents/cp/saved_files/codechefBNSONSTR.cpp",
+		"/home/abj/Documents/cp/saved_files/codechefWAV2.cpp",
+		"/home/abj/Documents/cp/saved_files/atcoder_abc206d.cpp",
+		"/home/abj/Documents/cp/contest/atcoder/dsu",
+		"/home/abj/Documents/cp/contest/atcoder/dsu.hpp",
+		"/home/abj/Documents/cp/saved_files/atcoder_abc206e.cpp",
+		"/tmp/mozilla_abj0/segtree.cpp",
+		"/home/abj/Downloads/Telegram Desktop/6MkNsLbk.cpp",
+		"/home/abj/Documents/cp/saved_files/output.txt",
+		"/home/abj/Documents/cp/saved_files/input.txt",
+		"/home/abj/Documents/cp/saved_files/codeforces1538G.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1453D.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1537A.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1537B.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1537C.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1537D.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1537E1.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1537D_try.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1400D.cpp",
+		"/home/abj/.config/sublime-text-3/Packages/User/trie.sublime-snippet",
+		"/home/abj/Documents/cp/templates/segment_tree.cpp",
+		"/home/abj/.config/sublime-text-3/Packages/User/debugger.sublime-snippet",
+		"/home/abj/.config/sublime-text-3/Packages/User/Modulo.sublime-snippet",
+		"/home/abj/Documents/cp/saved_files/codeforces1523E.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces1523D.cpp",
+		"/home/abj/Documents/cp/saved_files/codeforces706D.cpp"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 652.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 220.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 90.0
+	},
+	"output.astyle_error_message":
+	{
+		"height": 0.0
+	},
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 128.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 108.0
+	},
+	"pinned_build_system": "Packages/User/cp.sublime-build",
+	"project": "learning_kotlin.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"codeforces1515e.cpp"
+			],
+			[
+				"d.cpp",
+				"d.cpp"
+			],
+			[
+				"e.cpp",
+				"e.cpp"
+			],
+			[
+				"b.c",
+				"b.cpp"
+			],
+			[
+				"a.cpp",
+				"a.cpp"
+			],
+			[
+				"b.cpp",
+				"b.cpp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Downloads/PortfolioAbJ-main/portfolio-heroku.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 55.0,
+		"last_filter": "spf",
+		"selected_items":
+		[
+			[
+				"spf",
+				"simplify_fraction"
+			],
+			[
+				"powM",
+				"powM"
+			],
+			[
+				"",
+				"powM"
+			],
+			[
+				"fact",
+				"calc_fact"
+			]
+		],
+		"width": 521.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 163.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}
