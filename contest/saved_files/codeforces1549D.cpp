@@ -13,17 +13,11 @@ using namespace std;
 const int inf  =     1e18 + 10;
 const int N    =     2e5 + 10;
 int n, a[N], ev, od, d[N];
-int st[N][66], lo[N];
+int st[N][66];
 
 int gc(int l, int r) {
-	int j = lo[r - l + 1LL];
+	int j = log2(r - l + 1);
 	return gcd(st[l][j], st[r - (1 << j) + 1][j]) != 1;
-}
-
-void precompute_log() {
-	lo[1LL] = 0;
-	for (int i = 2; i < N; i++)
-		lo[i] = lo[i >> 1LL] + 1LL;
 }
 
 void solve() {
@@ -63,7 +57,7 @@ void solve() {
 int32_t main() {
 	ios_base::sync_with_stdio(false); cin.tie(0);
 	int t; cin >> t;
-	precompute_log();
+
 	while (t--) {
 		solve(); cout << "\n";
 	}

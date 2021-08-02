@@ -1,0 +1,14 @@
+Some points to remember:
+	
+	☐	use the following to get runtime duration of exectution and memory details.
+
+	/usr/bin/time -v ./runfile < input.txt > output.txt
+
+Packages I use on VIM for cp:
+
+	☐	sudo apt-get install astyle (:%!astyle --indent=force-tab=4) to format vim cpp code
+	☐	:call Sing() (to generate template)
+	☐	:TemplateExpand (to expand template and set time and date)
+
+
+
