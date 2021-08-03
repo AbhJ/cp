@@ -1,6 +1,7 @@
 class Solution {
 public:
 	int ans;
+
 	void cnt(string s, int z) {
 		int n = s.length(), cnt = 0, o = 0, e = 0;
 		for(int i = 0; i < s.length(); i++) {
