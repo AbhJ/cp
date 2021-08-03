@@ -46,7 +46,7 @@ int f(int num, int siz) {
 }
 void solve() {
 	cin >> n;
-	for(int i = 1; i < 16; i++)
+	for(int i = 1; i < 17; i++)
 		a[i] = a[i - 1] * 10 + 1;
 	s = to_string(n);
 	siz = (int)s.length();
