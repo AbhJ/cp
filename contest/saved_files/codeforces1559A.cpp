@@ -1,3 +1,11 @@
+
+
+/**
+ * @author      : abhj
+ * @created     : Sunday Aug 15, 2021 20:30:37 IST
+ * @filename    : b.cpp
+ */
+
 #include "bits/stdc++.h"
 #define int          long long int
 #define mp           make_pair
@@ -12,33 +20,25 @@ using vvpii    =     std::vector<vpii>;
 using namespace std;
 const int inf  =     1e18 + 10;
 const int N    =     2e6 + 10;
-int n; string s;
-pair<int, string> f(int x) {
-	int taka = 0;
-	string t;
-	for (auto &i : s) {
-		if (i != '?')
-			t += i;
-		else if (x ^ ((int)t.size() & 1))
-			t += 'B';
-		else t += 'R';
-	}
-	for (int i = 1; i < n; i++) {
-		taka += t[i] == t[i - 1];
-	}
-	return mp(taka, t);
-}
+int n, a[N];
 void solve() {
-	cin >> n >> s;
-	if (f(1).F < f(0).F)
-		cout << f(1).S;
-	else cout << f(0).S;
+	cin >> n;
+	cin >> a[0];
+	for (int i = 1; i < n; i++) {
+		cin >> a[i];
+		a[0] = a[0] & a[i];
+	}
+	cout << a[0];
 }
+
 int32_t main() {
-	ios_base::sync_with_stdio(false); cin.tie(0);
-	int t; cin >> t;
+	ios_base::sync_with_stdio(false);
+	cin.tie(0);
+	int t;
+	cin >> t;
 	while (t--) {
-		solve(); cout << "\n";
+		solve();
+		cout << "\n";
 	}
 	return 0;
 }
