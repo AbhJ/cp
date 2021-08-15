@@ -4,11 +4,16 @@ Some points to remember:
 
 	/usr/bin/time -v ./runfile < input.txt > output.txt
 
+Empty files from Terminal:
+	
+	☐	cat /dev/null > file
+
 Packages I use on VIM for cp:
 
-	☐	sudo apt-get install astyle (:%!astyle --indent=force-tab=4) to format vim cpp code
+	☐	sudo apt-get install astyle (
+		:%!astyle --indent=force-tab=4
+		) 
+		to format vim cpp code
 	☐	:call Sing() (to generate template)
 	☐	:TemplateExpand (to expand template and set time and date)
-
-
-
+	☐	:args *.cpp | :tab all (to set all arguments and to open all files in new tabs)
