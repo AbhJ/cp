@@ -18,10 +18,8 @@ Empty files from Terminal:
 
 Packages I use on VIM for cp:
 
-	☐	sudo apt-get install astyle (
-		:%!astyle --indent=force-tab=4
-		) 
-		to format vim cpp code
+	☐	:%!astyle --indent=force-tab=4 -xe -xj -A2 -y -xg -p -xd -xb -Y (to format vim cpp code)
+	☐	:%!js-beautify --indent_size=4 --indent_char='\t' (for javascript formatting)
 	☐	:call Sing() (to generate template)
 	☐	:TemplateExpand (to expand template and set time and date)
 	☐	:args *.cpp | :tab all (to set all arguments and to open all files in new tabs)
