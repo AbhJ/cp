@@ -1,0 +1,1153 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"abh",
+				"abhj Single Test"
+			],
+			[
+				"ve",
+				"vector"
+			],
+			[
+				"ma",
+				"map"
+			],
+			[
+				"whi",
+				"while"
+			],
+			[
+				"for",
+				"for_"
+			],
+			[
+				"s",
+				"split-string\tsplitString"
+			],
+			[
+				"se",
+				"segment-tree\tsimpleSegmentTree"
+			],
+			[
+				"fi",
+				"findLexicographicRank"
+			],
+			[
+				"pr",
+				"prime_vector_sieve"
+			],
+			[
+				"emp",
+				"emplace"
+			],
+			[
+				"pre",
+				"pos_pre"
+			],
+			[
+				"pos",
+				"pos_pre"
+			],
+			[
+				"re",
+				"rep"
+			],
+			[
+				"cnt",
+				"cnt_no"
+			],
+			[
+				"cnt_",
+				"cnt_yes"
+			],
+			[
+				"ri",
+				"running_sum"
+			],
+			[
+				"jay_bh",
+				"jay_bholenath_jay_bholeneth_pok_pok_pok"
+			],
+			[
+				"dis",
+				"dis_from_ori"
+			],
+			[
+				"di",
+				"dis_from_ori"
+			],
+			[
+				"siz",
+				"sizeof"
+			],
+			[
+				"empalc",
+				"emplace_back"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "contest/a.cpp",
+			"redo_stack":
+			[
+				[
+					23,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAoAAAAAAAAACwAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAACgAAAAAAAAAKAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"insert",
+					{
+						"characters": "  "
+					},
+					"AgAAAAoAAAAAAAAACgAAAAAAAAABAAAAIAkAAAAAAAAACQAAAAAAAAABAAAAIA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAACwAAAAAAAAALAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					21,
+					1,
+					"insert",
+					{
+						"characters": " i"
+					},
+					"AgAAAAgAAAAAAAAACAAAAAAAAAABAAAAaQcAAAAAAAAABwAAAAAAAAABAAAAIA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAACQAAAAAAAAAJAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					1,
+					"insert",
+					{
+						"characters": "int"
+					},
+					"AwAAAAYAAAAAAAAABgAAAAAAAAABAAAAdAUAAAAAAAAABQAAAAAAAAABAAAAbgQAAAAAAAAABAAAAAAAAAABAAAAaQ",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAABwAAAAAAAAAHAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAAMAAAAAAAAAAwAAAAAAAAACAAAAKCk",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
+					1,
+					"insert",
+					{
+						"characters": "for"
+					},
+					"AwAAAAIAAAAAAAAAAgAAAAAAAAABAAAAcgEAAAAAAAAAAQAAAAAAAAABAAAAbwAAAAAAAAAAAAAAAAAAAAABAAAAZg",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAwAAAAAAAAADAAAAAAAAAAAAAAAAAPC/"
+				]
+			],
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "#include \"bits/stdc++.h\"\n#define int          long long int\n#define mp           make_pair\n#define pb           emplace_back\n#define F            first\n#define S            second\nusing vi       =     std::vector<int>;\nusing vvi      =     std::vector<vi>;\nusing pii      =     std::pair<int, int>;\nusing vpii     =     std::vector<pii>;\nusing vvpii    =     std::vector<vpii>;\n#define rep(i, a, b) for (int i = a; i <= b; i++)\n#define per(i, b, a) for (int i = b; i >= a; i--)\n#define all(x)       x.begin(), x.end()\nusing namespace std;\nconst int inf  =     1e18 + 10;\nconst int N    =     2e6 + 10;\npii p[N];\nint ans = inf;\nint cnt(int lef, int rig) {\n\t// return smallest area in region\n\tif (rig < lef)\n\t\treturn inf;\n\tint tmp = 0;\n\t// tmp is smal lest area rectangle in this box\n\tint m = rig + lef >> 1;\n\tint l = cnt(lef, m - 1), r = cnt(m, r);\n\tans = min(ans, l + r);\n\treturn tmp;\n}\nvoid solve() {\n\tint n;\n\tcin >> n;\n\trep(i, 1, n) {\n\t\tcin >> p[i].F >> p[i].S;\n\t}\n\tsort(p + 1, p + 1 + n);\n\tans = inf;\n\tcnt((int)0, (int)1e9);\n\tcout << ans;\n}\nint32_t main() {\n\tios_base::sync_with_stdio(false); cin.tie(0);\n\t// solve(); return 0;\n\tint t; cin >> t;\n\twhile (t--) {\n\t\tsolve(); cout << \"\\n\";\n\t}\n\treturn 0;\n}",
+			"file": "saved_files/codechef long May/codechefDAREA.cpp",
+			"file_size": 1204,
+			"file_write_time": 132676516994659315,
+			"settings":
+			{
+				"buffer_size": 1204,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					4,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAO0CAAAAAAAA7gIAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA7QIAAAAAAADtAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"insert",
+					{
+						"characters": "-"
+					},
+					"AQAAAHQDAAAAAAAAdQMAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAdAMAAAAAAAB0AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					10,
+					1,
+					"left_delete",
+					null,
+					"AQAAAHQDAAAAAAAAdAMAAAAAAAABAAAALQ",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAdQMAAAAAAAB1AwAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					3,
+					1,
+					"insert",
+					{
+						"characters": "b"
+					},
+					"AQAAAFkCAAAAAAAAWgIAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABZAgAAAAAAAFkCAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					4,
+					1,
+					"left_delete",
+					null,
+					"AQAAAFkCAAAAAAAAWQIAAAAAAAABAAAAYg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABaAgAAAAAAAFoCAAAAAAAAAAAAAAAA8L8"
+				]
+			]
+		},
+		{
+			"contents": "30 30 118264581564861424\n",
+			"file": "input.txt",
+			"file_size": 25,
+			"file_write_time": 132676481716720423,
+			"settings":
+			{
+				"buffer_size": 25,
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					6,
+					1,
+					"delete_word",
+					{
+						"forward": false
+					},
+					"AQAAAAAAAAAAAAAAAAAAAAAAAABTAAAANiA5CjEgMSAwIDAKMSAzIDEgMgoxIDUgMiAzCjUgMiAxNiA1CjIgNiAxIDEwCjMgNCAzIDQKMyA1IDMgMTAKNSA2IDEgMTAwCjQgMiAwIDExMAo",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAABTAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAFAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					11,
+					1,
+					"delete_word",
+					{
+						"forward": false
+					},
+					"AQAAAAAAAAAAAAAAAAAAAAAAAAAUAAAAMwoxIDIgMgozIDEgMgoyIDMgMgo",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					12,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAGgAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"delete_word",
+					{
+						"forward": false
+					},
+					"AQAAAAAAAAAAAAAAAAAAAAAAAAAaAAAANAoxIDEgMSAxCjEgMSAxIDEKMSAyIDMgNAo",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					17,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAFAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					21,
+					1,
+					"delete_word",
+					{
+						"forward": false
+					},
+					"AQAAAAAAAAAAAAAAAAAAAAAAAAAUAAAAMwoxIDIgMgozIDEgMgoyIDMgMgo",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAGgAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					28,
+					1,
+					"delete_word",
+					{
+						"forward": false
+					},
+					"AQAAAAAAAAAAAAAAAAAAAAAAAAAaAAAANAoxIDEgMSAxCjEgMSAxIDEKMSAyIDMgNAo",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAaAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					29,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAABgAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					33,
+					1,
+					"delete_word",
+					{
+						"forward": false
+					},
+					"AQAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAMiAyIDQK",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					34,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAGQAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					38,
+					1,
+					"delete_word",
+					{
+						"forward": false
+					},
+					"AQAAAAAAAAAAAAAAAAAAAAAAAAAZAAAAMzAgMzAgMTE4MjY0NTgxNTY0ODYxNDI0Cg",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAZAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					39,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAABgAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					52,
+					1,
+					"delete_word",
+					{
+						"forward": false
+					},
+					"AQAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAMiAyIDQK",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					53,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAGQAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ope",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"open",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inden",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"track",
+				"CodeTimeTracker: Open Dashboard"
+			],
+			[
+				"code ti",
+				"CodeTimeTracker: Open Dashboard"
+			],
+			[
+				"ww",
+				"Word Wrap: Toggle"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"col",
+				"Color Picker"
+			],
+			[
+				"color p",
+				"Color Picker"
+			],
+			[
+				"code time",
+				"CodeTimeTracker: Open Dashboard"
+			],
+			[
+				"tracke",
+				"CodeTimeTracker: Open Dashboard"
+			],
+			[
+				"tra",
+				"Trim Trailing White Space"
+			],
+			[
+				"teacke",
+				"CodeTimeTracker: Open Dashboard"
+			],
+			[
+				"codeti",
+				"Code Time: Show Tree View"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"openre",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"opw",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"time",
+				"Code Time: Show Tree View"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"idne",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"idne'",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indr",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"trail",
+				"Trim Trailing White Space"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"package re",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"packageres",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"packagere",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"close ",
+				"File: Close All"
+			],
+			[
+				"files",
+				"File: Save All"
+			],
+			[
+				"colo",
+				"UI: Select Color Scheme"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"fodl m",
+				"Fold Comments"
+			],
+			[
+				"comment",
+				"Toggle Comment"
+			],
+			[
+				"fold ",
+				"Code Folding: Fold"
+			],
+			[
+				"color highli",
+				"Preferences: Color Highlight Settings"
+			],
+			[
+				"sublime",
+				"SublimeLinter: Goto Error"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"wor",
+				"Word Wrap: Toggle"
+			],
+			[
+				"alignme",
+				"Preferences: Alignment File Settings – User"
+			],
+			[
+				"align",
+				"Preferences: Alignment File Settings – User"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"permu",
+				"Permute Lines: Shuffle"
+			],
+			[
+				"lowee",
+				"Convert Case: Lower Case"
+			],
+			[
+				"ui",
+				"UI: Select Theme"
+			],
+			[
+				"ui ",
+				"UI: Select Color Scheme"
+			],
+			[
+				"ui co",
+				"UI: Select Color Scheme"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"ui colo",
+				"UI: Select Color Scheme"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"select ui",
+				"UI: Select Color Scheme"
+			],
+			[
+				"",
+				"Code Folding: Fold All"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"remoe",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"color sc",
+				"UI: Select Color Scheme"
+			],
+			[
+				"color sch",
+				"UI: Select Color Scheme"
+			],
+			[
+				"open re",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"snipp",
+				"Snippet: cp abhj c++"
+			],
+			[
+				"material",
+				"Material Theme: Configuration"
+			],
+			[
+				"paackag",
+				"Package Control: Install Package"
+			],
+			[
+				"package res",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"i",
+				"Indexing Status"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 224.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/abj/Documents/cp/output.txt",
+		"/home/abj/Documents/cp/contest/bits/stdc++.h.gch",
+		"/home/abj/Documents/cp/contest/a.cpp",
+		"/home/abj/Documents/cp/contest/Main.java",
+		"/home/abj/Documents/cp/a.cpp",
+		"/home/abj/Documents/learning_cp/atcoder_abc202d.cpp",
+		"/home/abj/Documents/cp/project.sublime-project",
+		"/home/abj/.config/sublime-text-3/Packages/User/Modulo.sublime-snippet",
+		"/home/abj/Documents/cp/template.cpp",
+		"/home/abj/Documents/cp/stress test/a.cpp",
+		"/home/abj/Documents/cp/stress test/brute.cpp",
+		"/home/abj/Documents/cp/stress test/brute",
+		"/home/abj/Documents/cp/stress test/a.out",
+		"/home/abj/Documents/cp/stress test/gen.cpp",
+		"/home/abj/Documents/cp/stress test/runfile",
+		"/home/abj/Documents/cp/stress test/s.sh",
+		"/home/abj/Documents/cp/stress test/int",
+		"/home/abj/Documents/cp/stress test/info.txt",
+		"/home/abj/Documents/cp/runfile",
+		"/home/abj/Documents/cp/stress test/in",
+		"/home/abj/Documents/cp/stress test/gen",
+		"/home/abj/Documents/cp/stress test/gen_tree.cpp",
+		"/home/abj/Documents/cp/a.out",
+		"/home/abj/Documents/cp/b.cpp",
+		"/home/abj/Documents/cp/testing/a.cpp",
+		"/home/abj/Documents/cp/testing/gen.cpp",
+		"/home/abj/Documents/cp/testing/gen_tree2.cpp",
+		"/home/abj/Documents/cp/testing/gen_tree.cpp",
+		"/home/abj/Documents/cp/testing/in",
+		"/home/abj/Documents/cp/testing/s.sh",
+		"/home/abj/Documents/cp/testing/brute.cpp",
+		"/home/abj/Documents/learning_cp/codechef long May/codechefDAREA.cpp",
+		"/home/abj/.config/sublime-text-3/Packages/User/Mariana.sublime-color-scheme",
+		"/home/abj/.config/sublime-text-3/Packages/User/cp_single_test.sublime-snippet",
+		"/home/abj/Documents/cp/c",
+		"/home/abj/Documents/learning_java/STT_1/PatientDetail.json",
+		"/home/abj/Documents/learning_java/STT_1/src/com/abhj/TextResponsesToJSON.java",
+		"/home/abj/Documents/learning_java/STT_1/src/com/abhj/PatientDetail.java",
+		"/home/abj/Documents/learning_java/STT_1/output/output_Address.wav",
+		"/home/abj/Documents/learning_java/STT_1/output/output_Location.wav",
+		"/home/abj/Documents/learning_java/STT_1/output/output_Name.wav",
+		"/home/abj/Documents/learning_java/STT_1/output/output_PhoneNumber.wav",
+		"/home/abj/Documents/cp/g.cpp",
+		"/home/abj/Documents/learning_cp/abc204_d.cpp",
+		"/home/abj/Documents/cp/f.cpp",
+		"/home/abj/Documents/learning_cp/abc204_e.cpp",
+		"/home/abj/Documents/learning_cp/abc204_c.cpp",
+		"/home/abj/Documents/learning_cp/abc204_b.cpp",
+		"/home/abj/Documents/learning_cp/abc204_a.cpp",
+		"/home/abj/Documents/learning_cp/abc204",
+		"/home/abj/Documents/cp/h.cpp",
+		"/home/abj/Documents/cp/e.cpp",
+		"/home/abj/Documents/cp/d.cpp",
+		"/home/abj/Documents/cp/c.cpp",
+		"/home/abj/Documents/cp/codeforces1417E.cpp",
+		"/home/abj/Documents/cp/ac-library-master/.clang-format",
+		"/home/abj/Documents/cp/atcoder/all",
+		"/home/abj/Documents/cp/cp.sublime-project",
+		"/home/abj/.config/sublime-text-3/Packages/WakaTime/WakaTime.sublime-settings",
+		"/home/abj/.software/CodeTime.txt",
+		"/home/abj/.config/sublime-text-3/Packages/User/WakaTime.sublime-settings",
+		"/etc/apt/sources.list",
+		"/home/abj/.config/sublime-text-3/Installed Packages/CodeTime.sublime-package/README.txt",
+		"/home/abj/Documents/learning_cp/codeforces1535D.cpp",
+		"/home/abj/.config/sublime-text-3/Packages/User/cp.sublime-snippet",
+		"/home/abj/Documents/learning_cp/codeforces1494D.cpp",
+		"/home/abj/Documents/learning_cp/codechefSHROUTE.cpp",
+		"/home/abj/Documents/learning_cp/codechefBITTUP.cpp",
+		"/home/abj/Documents/cp/bits/stdc++.h.gch",
+		"/home/abj/Documents/learning_cp/codechef long May/codechefCHFHEIST.cpp",
+		"/home/abj/Documents/learning_cp/codechef long May/codechefCOCONUT.cpp",
+		"/home/abj/Documents/learning_cp/codeforces1535C.cpp",
+		"/home/abj/Documents/cp/heavytemp.cpp",
+		"/home/abj/Documents/learning_cp/codeforces1523A.cpp",
+		"/home/abj/Documents/learning_cp/codeforces1523B.cpp",
+		"/home/abj/Documents/learning_cp/codeforces1523D.cpp",
+		"/home/abj/Documents/learning_cp/codeforces1523C.cpp",
+		"/home/abj/.config/sublime-text-3/Packages/User/cp.sublime-build",
+		"/home/abj/Documents/learning_java/STT_1/src/com/abhj/JavaSoundRecorder.java",
+		"/home/abj/Documents/cp/☗ ● Submit Code - Codeforces.cpp",
+		"/home/abj/Downloads/Telegram Desktop/S01 EP22 of Assassination Classroom @deekshitbunny.mp4",
+		"/home/abj/.config/sublime-text-3/Packages/Material Theme/extras/PlainTasks/Material-Theme-Darker.hidden-tmTheme",
+		"/home/abj/Documents/learning_cp/codeforces1503C.cpp",
+		"/home/abj/.config/sublime-text-3/Packages/jsonschema/dependency-metadata.json",
+		"/home/abj/Documents/cp/segment_tree_lazy.cpp",
+		"/home/abj/.config/sublime-text-3/Packages/Night Owl/Night Owl - Light.sublime-color-scheme",
+		"/home/abj/.config/sublime-text-3/Packages/User/temp.sublime-completions",
+		"/home/abj/Documents/cp/cf",
+		"/home/abj/Documents/cp/input.txt",
+		"/home/abj/Documents/cp/segment_tree.cpp",
+		"/home/abj/Documents/learning_cp/codeforces1499D.cpp",
+		"/home/abj/Documents/cp/cp.sublime-workspace",
+		"/home/abj/Documents/learning_cp/codeforces1511D.cpp",
+		"/home/abj/.config/sublime-text-3/Packages/User/Base File.sublime-settings",
+		"/home/abj/Downloads/salesforce-csv/Salesforce-Data.csv",
+		"/home/abj/Documents/learning_cp/atcoder_abc203e.cpp",
+		"/home/abj/Downloads/salesforce-csv/last_name.csv",
+		"/home/abj/Documents/links used",
+		"/home/abj/Downloads/salesforce-csv/female-names",
+		"/home/abj/Downloads/first_and_last_names.csv",
+		"/home/abj/Downloads/babynames-clean.csv",
+		"/home/abj/Downloads/salesforce-csv/male-names",
+		"/home/abj/Downloads/salesforce-csv/100-contacts.csv",
+		"/home/abj/Documents/Salesforce-Data.csv",
+		"/home/abj/Downloads/salesforce-csv/app_c.xlsx",
+		"/home/abj/Documents/cp/Main.java",
+		"/home/abj/Documents/cp/codeforces1515e.cpp",
+		"/home/abj/patch.sh",
+		"/home/abj/tmp_sub_txt",
+		"/home/abj/Downloads/sublime_text_4107.92_amd64_patched/sublime_text",
+		"/opt/sublime_text/sublime_text",
+		"/home/abj/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/abj/Documents/learning_cp/codeforces1529C.cpp",
+		"/home/abj/Documents/learning_cp/atcoder_abc203_a.cpp",
+		"/home/abj/Documents/learning_cp/atcoder_abc203_b.cpp",
+		"/home/abj/Documents/learning_cp/atcoder_abc203_c.cpp",
+		"/home/abj/Documents/learning_cp/atcoder_abc203_d.cpp",
+		"/home/abj/Documents/learning_cp/codeforces1529D.cpp",
+		"/home/abj/.config/sublime-text-3/Packages/Material Theme/schemes/Material-Theme-Palenight.tmTheme",
+		"/home/abj/.config/sublime-text-3/Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+		"/home/abj/.config/sublime-text-3/Packages/Material Theme/Material-Theme.sublime-theme",
+		"/home/abj/.config/sublime-text-3/Packages/Material Theme/schemes/Material-Theme.tmTheme",
+		"/home/abj/Documents/learning_cp/codeforces1526B.cpp",
+		"/home/abj/Documents/learning_cp/atcoder_arc121c.cpp",
+		"/home/abj/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/abj/Documents/learning_cp/codeforces1526D.cpp",
+		"/home/abj/.config/sublime-text-3/Packages/User/google.sublime-snippet",
+		"/home/abj/Documents/cp/codeforces1516D.cpp"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 652.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"C",
+			"m",
+			"C(int n, int r)",
+			"C(int n, int k)",
+			"precompure",
+			"binomial",
+			"];\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "contest/a.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "saved_files/codechef long May/codechefDAREA.cpp",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1204,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								292,
+								292
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "input.txt",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 220.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				2
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.71046242786,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.5,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.astyle_error_message":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 138.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/cp.sublime-build",
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"codeforces1515e.cpp"
+			],
+			[
+				"d.cpp",
+				"d.cpp"
+			],
+			[
+				"e.cpp",
+				"e.cpp"
+			],
+			[
+				"b.c",
+				"b.cpp"
+			],
+			[
+				"a.cpp",
+				"a.cpp"
+			],
+			[
+				"b.cpp",
+				"b.cpp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 55.0,
+		"last_filter": "spf",
+		"selected_items":
+		[
+			[
+				"spf",
+				"simplify_fraction"
+			],
+			[
+				"powM",
+				"powM"
+			],
+			[
+				"",
+				"powM"
+			],
+			[
+				"fact",
+				"calc_fact"
+			]
+		],
+		"width": 521.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				2
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		]
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 193.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
