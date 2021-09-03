@@ -3,3 +3,4 @@
 bits/
 *.css
 *.gch
+*.local/
