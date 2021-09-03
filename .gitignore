@@ -1,2 +1,5 @@
 # Specify filepatterns you want git to ignore.
 # saved_files/
+bits/
+*.css
+*.gch
