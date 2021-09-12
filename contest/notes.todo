@@ -1,8 +1,7 @@
 Some points to remember:
 	
 	☐	use the following to get runtime duration of exectution and memory details.
-
-	/usr/bin/time -v ./runfile < input.txt > output.txt
+		/usr/bin/time -v ./runfile < input.txt > output.txt
 	☐	to change tab of terminal click alt + tab_number
 	☐	to center cursor line press zz in normal mode
 	☐	update imput file
@@ -25,13 +24,15 @@ Packages I use on VIM for cp:
 	☐	:args *.cpp | :tab all (to set all arguments and to open all files in new tabs)
 
 My sublime build:
-	☐	
-	{
-	    "cmd": ["g++ -Wall -Wextra -O2 -pthread -H -I . \"${file}\" -o runfile  && timeout 1.5s /usr/bin/time -v ./runfile <input.txt> output.txt && rm runfile"], 
-	    // above line works fine if input.txt and output.txt files are present in same directory in which .cpp file is present else add complete address of these files for using them as common input output files in your system.
-	    // have used this to compile headers at /usr/include/x86_64-linux-gnu/c++/9/bits/
-	    // sudo g++ -std=c++20 -Wall -Wextra -O2 -o bits -pthread stdc++.h
-	    "shell":true,
-	    "working_dir":"$file_path",
-	    "selector":"source.c,source.c++,source.cpp",
-	}
+	☐	{                                                                                                                                                                                                                              	
+     	    "cmd": ["g++ -Wall -Wextra -O2 -pthread -H -I . \"${file}\" -o runfile  && timeout 1.5s /usr/bin/time -v ./runfile <input.txt> output.txt && rm runfile"], 
+     	    // above line works fine if input.txt and output.txt files are present in same directory in which .cpp file is present else add complete address of these files for using them as common input output files in your system.
+     	    // have used this to compile headers at /usr/include/x86_64-linux-gnu/c++/9/bits/
+     	    // sudo g++ -std=c++20 -Wall -Wextra -O2 -o bits -pthread stdc++.h
+     	    "shell":true,
+     	    "working_dir":"$file_path",
+     	    "selector":"source.c,source.c++,source.cpp",
+     	}
+
+Recursive function:
+	☐	function <int (int, int)> f = [&] (int l, int r) -> int {
