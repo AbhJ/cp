@@ -1,6 +1,9 @@
 # Specify filepatterns you want git to ignore.
 saved_files/
 bits/
+# bits is in the contest directory
 *.css
 *.gch
 *.local/
+*.sublime-workspace
+*.sublime-project
