@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
 				"out",
 				"outp"
 			],
@@ -220,10 +228,10 @@
 	"buffers":
 	[
 		{
-			"contents": " ",
+			"contents": "cin >> n >> d >> c >> m >> s;\n\tint ans = 0, las = - 1;\n\tfor (int i = 0; i < n; i++) {\n\t\tif (s[i] == 'D') {\n\t\t\tif (d > 0)\n\t\t\t\td--, c += m;\n\t\t\telse\n\t\t\t\tans = 1;\n\t\t}\n\t\telse {\n\t\t\tif (c > 0)\n\t\t\t\tc--;\n\t\t\telse {\n\t\t\t\tlas = i;\n\t\t\t\tbreak;\n\t\t\t}\n\t\t}\n\t}\n\tif (ans == 1) {\n\t\tcout << \"NO\";\n\t\treturn;\n\t}\n\tif (las != - 1)\n\t\tfor (int i = las + 1; i < n; i++) {\n\t\t\tif (s[i] == 'D') {\n\t\t\t\tcout << \"NO\";\n\t\t\t\treturn;\n\t\t\t}\n\t\t}\n\tcout << \"YES\";",
 			"settings":
 			{
-				"buffer_size": 1,
+				"buffer_size": 418,
 				"line_ending": "Unix"
 			},
 			"undo_stack":
@@ -231,249 +239,756 @@
 				[
 					3,
 					1,
-					"insert",
-					{
-						"characters": "fduiop"
-					},
-					"BgAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAMAAAAAAAAAAAAAAAMAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAFAAAAAAAAAAAAAAAFAAAAAAAAAAYAAAAAAAAAAAAAAA",
-					"DQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					4,
-					1,
-					"delete_word",
-					{
-						"forward": false
-					},
-					"AQAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAZmR1aW9w",
-					"DQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAABgAAAAAAAAAGAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					13,
-					1,
-					"sequence",
-					{
-						"commands":
-						[
-							[
-								"insert",
-								{
-									"characters": "dd"
-								}
-							],
-							[
-								"left_delete",
-								null
-							],
-							[
-								"left_delete",
-								null
-							],
-							[
-								"left_delete",
-								null
-							],
-							[
-								"left_delete",
-								null
-							],
-							[
-								"left_delete",
-								null
-							],
-							[
-								"left_delete",
-								null
-							],
-							[
-								"left_delete",
-								null
-							],
-							[
-								"left_delete",
-								null
-							],
-							[
-								"left_delete",
-								null
-							],
-							[
-								"left_delete",
-								null
-							],
-							[
-								"left_delete",
-								null
-							],
-							[
-								"left_delete",
-								null
-							],
-							[
-								"left_delete",
-								null
-							]
-						]
-					},
-					"BAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAQAAAGQAAAAAAAAAAAAAAAAAAAAAAQAAAGQ",
-					"DQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					2,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA",
-					"DAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvw"
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAogEAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8"
 				]
 			]
 		},
 		{
-			"file": "/home/abj/Downloads/NLP_CS60075_A21_Assn1 (1).ipynb",
+			"file": "contest/a.cpp",
 			"settings":
 			{
-				"buffer_size": 22961,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "contest/d.cpp",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "const int M    =     1e9 + 7;\nint add(int a, int b) {\n\ta += b;\n\treturn (a >= M ? a - M : a);\n}\nint mul(int a, int b) {\n\treturn (a * b) % M;\n}\nint sub(int a, int b) {\n\treturn (a - b + M) % M;\n}\nint powM(int b, int p) {\n\tint r = 1;\n\tfor (; p; b = mul(b, b), p >>= 1)\n\t\tif (p & 1)\n\t\t\tr = mul(r, b);\n\treturn r;\n}\nint invM(int x) {\n\treturn powM(x, M - 2);\n}\nint f[N], b[N];\nvoid binomialCoeff() {\n\tf[0] = 1;\n\tfor (int i = 1; i <= N - 1; i++)\n\t\tf[i] = mul(f[i - 1], i);\n\tb[N - 1] = powM(f[N - 1], M - 2);\n\tfor (int i = N - 2; i >= 0; i--)\n\t\tb[i] = mul(b[i + 1], i + 1);\n}\nint C(int n, int r) {\n\treturn (r > n ? 0LL : mul(f[n], mul(b[r], b[n - r])));\n}",
-			"file": "contest/c.cpp",
-			"file_size": 0,
-			"file_write_time": 132758175249476087,
-			"settings":
-			{
-				"buffer_size": 645,
+				"buffer_size": 1014,
 				"line_ending": "Unix"
 			},
 			"undo_stack":
 			[
 				[
-					13,
+					20,
+					1,
+					"revert",
+					null,
+					"AgAAAAAAAAAAAAAAAAAAAAAAAAD2AwAALyoqCiAqIEBhdXRob3IgICAgICA6IGFiaGoKICogQGNyZWF0ZWQgICAgIDogU2F0dXJkYXkgT2N0IDE2LCAyMDIxIDE3OjU1OjMxIElTVAogKiBAZmlsZW5hbWUgICAgOiBhLmNwcAogKi8KCiNpbmNsdWRlICJiaXRzL3N0ZGMrKy5oIgojZGVmaW5lIGludCAgICAgICAgICBsb25nIGxvbmcgaW50CiNkZWZpbmUgbXAgICAgICAgICAgIG1ha2VfcGFpcgojZGVmaW5lIHBiICAgICAgICAgICBlbXBsYWNlX2JhY2sKI2RlZmluZSBGICAgICAgICAgICAgZmlyc3QKI2RlZmluZSBTICAgICAgICAgICAgc2Vjb25kCnVzaW5nIHZpICAgICAgID0gICAgIHN0ZDo6dmVjdG9yPGludD47CnVzaW5nIHZ2aSAgICAgID0gICAgIHN0ZDo6dmVjdG9yPHZpPjsKdXNpbmcgcGlpICAgICAgPSAgICAgc3RkOjpwYWlyPGludCwgaW50PjsKdXNpbmcgdnBpaSAgICAgPSAgICAgc3RkOjp2ZWN0b3I8cGlpPjsKdXNpbmcgdnZwaWkgICAgPSAgICAgc3RkOjp2ZWN0b3I8dnBpaT47CnVzaW5nIG5hbWVzcGFjZSBzdGQ7CmNvbnN0IGludCBpbmYgID0gICAgIDFlMTggKyAxMDsKY29uc3QgaW50IE4gICAgPSAgICAgMmU2ICsgMTA7CgppbnQgbiwgeF9fMVtOXSwgeF9fMltOXSwgeV9fMVtOXSwgeV9fMltOXTsKCnZvaWQgc29sdmUoKSB7CgljaW4gPj4gbjsKCWZvciAoaW50IGkgPSAwOyBpIDwgbjsgaSsrKQoJCWNpbiA+PiB4X18xW2ldID4+IHhfXzJbaV0gPj4geV9fMVtpXSA+PiB5X18yW2ldOwoJY291dCA8PAoJCSBhY2N1bXVsYXRlICh4X18yLCB4X18yICsgbiwgMExMKQoJCSAvIG4gPDwgIiAiIDw8CgkJIGFjY3VtdWxhdGUgKHlfXzIsIHlfXzIgKyBuLCAwTEwpIC8gbjsKfQoKaW50MzJfdCBtYWluKCkgewoJaW9zX2Jhc2U6OnN5bmNfd2l0aF9zdGRpbyAoZmFsc2UpOwoJY2luLnRpZSAoMCk7CglpbnQgdCwgeCA9IDA7CgljaW4gPj4gdDsKCXdoaWxlICh0LS0pIHsKCQljb3V0IDw8ICJDYXNlICMiIDw8ICsreCA8PCAiOiAiOwoJCXNvbHZlKCk7CgkJY291dCA8PCAiXG4iOwoJfQoJcmV0dXJuIDA7Cn0KAAAAAAAAAAD2AwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA1wEAAAAAAADXAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					52,
+					1,
+					"revert",
+					null,
+					"AgAAAAAAAAAAAAAAAAAAAAAAAAD2AwAALyoqCiAqIEBhdXRob3IgICAgICA6IGFiaGoKICogQGNyZWF0ZWQgICAgIDogU2F0dXJkYXkgT2N0IDE2LCAyMDIxIDE3OjU1OjMxIElTVAogKiBAZmlsZW5hbWUgICAgOiBhLmNwcAogKi8KCiNpbmNsdWRlICJiaXRzL3N0ZGMrKy5oIgojZGVmaW5lIGludCAgICAgICAgICBsb25nIGxvbmcgaW50CiNkZWZpbmUgbXAgICAgICAgICAgIG1ha2VfcGFpcgojZGVmaW5lIHBiICAgICAgICAgICBlbXBsYWNlX2JhY2sKI2RlZmluZSBGICAgICAgICAgICAgZmlyc3QKI2RlZmluZSBTICAgICAgICAgICAgc2Vjb25kCnVzaW5nIHZpICAgICAgID0gICAgIHN0ZDo6dmVjdG9yPGludD47CnVzaW5nIHZ2aSAgICAgID0gICAgIHN0ZDo6dmVjdG9yPHZpPjsKdXNpbmcgcGlpICAgICAgPSAgICAgc3RkOjpwYWlyPGludCwgaW50PjsKdXNpbmcgdnBpaSAgICAgPSAgICAgc3RkOjp2ZWN0b3I8cGlpPjsKdXNpbmcgdnZwaWkgICAgPSAgICAgc3RkOjp2ZWN0b3I8dnBpaT47CnVzaW5nIG5hbWVzcGFjZSBzdGQ7CmNvbnN0IGludCBpbmYgID0gICAgIDFlMTggKyAxMDsKY29uc3QgaW50IE4gICAgPSAgICAgMmU2ICsgMTA7CgppbnQgbiwgeF9fMVtOXSwgeF9fMltOXSwgeV9fMVtOXSwgeV9fMltOXTsKCnZvaWQgc29sdmUoKSB7CgljaW4gPj4gbjsKCWZvciAoaW50IGkgPSAwOyBpIDwgbjsgaSsrKQoJCWNpbiA+PiB4X18xW2ldID4+IHhfXzJbaV0gPj4geV9fMVtpXSA+PiB5X18yW2ldOwoJY291dCA8PAoJCSBhY2N1bXVsYXRlICh4X18yLCB4X18yICsgbiwgMExMKQoJCSAvIG4gPDwgIiAiIDw8CgkJIGFjY3VtdWxhdGUgKHlfXzIsIHlfXzIgKyBuLCAwTEwpIC8gbjsKfQoKaW50MzJfdCBtYWluKCkgewoJaW9zX2Jhc2U6OnN5bmNfd2l0aF9zdGRpbyAoZmFsc2UpOwoJY2luLnRpZSAoMCk7CglpbnQgdCwgeCA9IDA7CgljaW4gPj4gdDsKCXdoaWxlICh0LS0pIHsKCQljb3V0IDw8ICJDYXNlICMiIDw8ICsreCA8PCAiOiAiOwoJCXNvbHZlKCk7CgkJY291dCA8PCAiXG4iOwoJfQoJcmV0dXJuIDA7Cn0KAAAAAAAAAAD2AwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA9QIAAAAAAAD1AgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					53,
+					1,
+					"revert",
+					null,
+					"AgAAAAAAAAAAAAAAAAAAAAAAAAD2AwAALyoqCiAqIEBhdXRob3IgICAgICA6IGFiaGoKICogQGNyZWF0ZWQgICAgIDogU2F0dXJkYXkgT2N0IDE2LCAyMDIxIDE3OjU1OjMxIElTVAogKiBAZmlsZW5hbWUgICAgOiBhLmNwcAogKi8KCiNpbmNsdWRlICJiaXRzL3N0ZGMrKy5oIgojZGVmaW5lIGludCAgICAgICAgICBsb25nIGxvbmcgaW50CiNkZWZpbmUgbXAgICAgICAgICAgIG1ha2VfcGFpcgojZGVmaW5lIHBiICAgICAgICAgICBlbXBsYWNlX2JhY2sKI2RlZmluZSBGICAgICAgICAgICAgZmlyc3QKI2RlZmluZSBTICAgICAgICAgICAgc2Vjb25kCnVzaW5nIHZpICAgICAgID0gICAgIHN0ZDo6dmVjdG9yPGludD47CnVzaW5nIHZ2aSAgICAgID0gICAgIHN0ZDo6dmVjdG9yPHZpPjsKdXNpbmcgcGlpICAgICAgPSAgICAgc3RkOjpwYWlyPGludCwgaW50PjsKdXNpbmcgdnBpaSAgICAgPSAgICAgc3RkOjp2ZWN0b3I8cGlpPjsKdXNpbmcgdnZwaWkgICAgPSAgICAgc3RkOjp2ZWN0b3I8dnBpaT47CnVzaW5nIG5hbWVzcGFjZSBzdGQ7CmNvbnN0IGludCBpbmYgID0gICAgIDFlMTggKyAxMDsKY29uc3QgaW50IE4gICAgPSAgICAgMmU2ICsgMTA7CgppbnQgbiwgeF9fMVtOXSwgeF9fMltOXSwgeV9fMVtOXSwgeV9fMltOXTsKCnZvaWQgc29sdmUoKSB7CgljaW4gPj4gbjsKCWZvciAoaW50IGkgPSAwOyBpIDwgbjsgaSsrKQoJCWNpbiA+PiB4X18xW2ldID4+IHhfXzJbaV0gPj4geV9fMVtpXSA+PiB5X18yW2ldOwoJY291dCA8PAoJCSBhY2N1bXVsYXRlICh4X18yLCB4X18yICsgbiwgMExMKQoJCSAvIG4gPDwgIiAiIDw8CgkJIGFjY3VtdWxhdGUgKHlfXzIsIHlfXzIgKyBuLCAwTEwpIC8gbjsKfQoKaW50MzJfdCBtYWluKCkgewoJaW9zX2Jhc2U6OnN5bmNfd2l0aF9zdGRpbyAoZmFsc2UpOwoJY2luLnRpZSAoMCk7CglpbnQgdCwgeCA9IDA7CgljaW4gPj4gdDsKCXdoaWxlICh0LS0pIHsKCQljb3V0IDw8ICJDYXNlICMiIDw8ICsreCA8PCAiOiAiOwoJCXNvbHZlKCk7CgkJY291dCA8PCAiXG4iOwoJfQoJcmV0dXJuIDA7Cn0KAAAAAAAAAAD2AwAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAA9QIAAAAAAAD1AgAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "contest/b.cpp",
+			"settings":
+			{
+				"buffer_size": 439,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					5,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAogEAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					30,
 					1,
 					"sequence",
 					{
 						"commands":
 						[
 							[
-								"insert",
+								"move",
 								{
-									"characters": "modu"
+									"by": "characters",
+									"forward": true,
+									"register": "\""
 								}
 							],
 							[
-								"insert_completion",
+								"unindent",
+								null
+							],
+							[
+								"move",
 								{
-									"completion": "const int M    =     1e9 + 7;\nint add(int a, int b) {\n\ta += b;\n\treturn (a >= M ? a - M : a);\n}\nint mul(int a, int b) {\n\treturn (a * b) % M;\n}\nint sub(int a, int b) {\n\treturn (a - b + M) % M;\n}\nint powM(int b, int p) {\n\tint r = 1;\n\tfor (; p; b = mul(b, b), p >>= 1)\n\t\tif (p & 1)\n\t\t\tr = mul(r, b);\n\treturn r;\n}\nint invM(int x) {\n\treturn powM(x, M - 2);\n}\nint f[N], b[N];\nvoid binomialCoeff() {\n\tf[0] = 1;\n\tfor (int i = 1; i <= N - 1; i++)\n\t\tf[i] = mul(f[i - 1], i);\n\tb[N - 1] = powM(f[N - 1], M - 2);\n\tfor (int i = N - 2; i >= 0; i--)\n\t\tb[i] = mul(b[i + 1], i + 1);\n}\nint C(int n, int r) {\n\treturn (r > n ? 0LL : mul(f[n], mul(b[r], b[n - r])));\n}",
-									"format": "snippet",
-									"keep_prefix": false,
-									"must_insert": false,
-									"trigger": "Modulo Combinatorics"
+									"by": "characters",
+									"forward": false
 								}
 							],
 							[
 								"insert",
 								{
-									"characters": "\n"
+									"characters": ","
 								}
+							],
+							[
+								"insert",
+								{
+									"characters": " flad"
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"insert",
+								{
+									"characters": "g,"
+								}
+							],
+							[
+								"insert",
+								{
+									"characters": " "
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"insert",
+								{
+									"characters": "t_indez"
+								}
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"left_delete",
+								null
+							],
+							[
+								"find_under_expand",
+								null
+							],
+							[
+								"find_all_under",
+								null
+							],
+							[
+								"move",
+								{
+									"by": "characters",
+									"forward": true
+								}
+							],
+							[
+								"insert",
+								{
+									"characters": "_index"
+								}
+							],
+							[
+								"exit_insert_mode",
+								null
 							]
 						]
 					},
-					"BwAAAC8CAAAAAAAAMAIAAAAAAAAAAAAAMAIAAAAAAAAxAgAAAAAAAAAAAAAxAgAAAAAAADICAAAAAAAAAAAAADICAAAAAAAAMwIAAAAAAAAAAAAALwIAAAAAAAAvAgAAAAAAAAQAAABtb2R1LwIAAAAAAAC0BAAAAAAAAAAAAAC0BAAAAAAAALUEAAAAAAAAAAAAAA",
-					"BwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAALwIAAAAAAAAvAgAAAAAAAAAAAAAAAPC/"
+					"TQAAAB4AAAAAAAAAHgAAAAAAAAABAAAACTYAAAAAAAAANgAAAAAAAAABAAAACVQAAAAAAAAAVAAAAAAAAAABAAAACWgAAAAAAAAAaAAAAAAAAAABAAAACXUAAAAAAAAAdQAAAAAAAAABAAAACYUAAAAAAAAAhQAAAAAAAAABAAAACYwAAAAAAAAAjAAAAAAAAAABAAAACZgAAAAAAAAAmAAAAAAAAAABAAAACZsAAAAAAAAAmwAAAAAAAAABAAAACaMAAAAAAAAAowAAAAAAAAABAAAACbAAAAAAAAAAsAAAAAAAAAABAAAACbgAAAAAAAAAuAAAAAAAAAABAAAACcEAAAAAAAAAwQAAAAAAAAABAAAACc0AAAAAAAAAzQAAAAAAAAABAAAACdcAAAAAAAAA1wAAAAAAAAABAAAACdsAAAAAAAAA2wAAAAAAAAABAAAACd4AAAAAAAAA3gAAAAAAAAABAAAACeAAAAAAAAAA4AAAAAAAAAABAAAACfAAAAAAAAAA8AAAAAAAAAABAAAACf8AAAAAAAAA/wAAAAAAAAABAAAACQgBAAAAAAAACAEAAAAAAAABAAAACQoBAAAAAAAACgEAAAAAAAABAAAACRoBAAAAAAAAGgEAAAAAAAABAAAACT8BAAAAAAAAPwEAAAAAAAABAAAACVQBAAAAAAAAVAEAAAAAAAABAAAACWUBAAAAAAAAZQEAAAAAAAABAAAACXABAAAAAAAAcAEAAAAAAAABAAAACXQBAAAAAAAAdAEAAAAAAAABAAAACXcBAAAAAAAAdwEAAAAAAAABAAAACSsAAAAAAAAALAAAAAAAAAAAAAAALAAAAAAAAAAtAAAAAAAAAAAAAAAtAAAAAAAAAC4AAAAAAAAAAAAAAC4AAAAAAAAALwAAAAAAAAAAAAAALwAAAAAAAAAwAAAAAAAAAAAAAAAwAAAAAAAAADEAAAAAAAAAAAAAADAAAAAAAAAAMAAAAAAAAAABAAAAZDAAAAAAAAAAMQAAAAAAAAAAAAAAMQAAAAAAAAAyAAAAAAAAAAAAAAAyAAAAAAAAADMAAAAAAAAAAAAAADYAAAAAAAAANwAAAAAAAAAAAAAANwAAAAAAAAA4AAAAAAAAAAAAAAA4AAAAAAAAADkAAAAAAAAAAAAAADkAAAAAAAAAOgAAAAAAAAAAAAAAOgAAAAAAAAA7AAAAAAAAAAAAAAA7AAAAAAAAADwAAAAAAAAAAAAAADwAAAAAAAAAPQAAAAAAAAAAAAAAPAAAAAAAAAA8AAAAAAAAAAEAAAB6OwAAAAAAAAA7AAAAAAAAAAEAAABlOgAAAAAAAAA6AAAAAAAAAAEAAABkOQAAAAAAAAA5AAAAAAAAAAEAAABuOAAAAAAAAAA4AAAAAAAAAAEAAABpNwAAAAAAAAA3AAAAAAAAAAEAAABfNgAAAAAAAAA2AAAAAAAAAAEAAAB0MwEAAAAAAAA0AQAAAAAAAAAAAAAZAQAAAAAAABoBAAAAAAAAAAAAAM8AAAAAAAAA0AAAAAAAAAAAAAAANgAAAAAAAAA3AAAAAAAAAAAAAAA3AQAAAAAAADgBAAAAAAAAAAAAABwBAAAAAAAAHQEAAAAAAAAAAAAA0QAAAAAAAADSAAAAAAAAAAAAAAA3AAAAAAAAADgAAAAAAAAAAAAAADsBAAAAAAAAPAEAAAAAAAAAAAAAHwEAAAAAAAAgAQAAAAAAAAAAAADTAAAAAAAAANQAAAAAAAAAAAAAADgAAAAAAAAAOQAAAAAAAAAAAAAAPwEAAAAAAABAAQAAAAAAAAAAAAAiAQAAAAAAACMBAAAAAAAAAAAAANUAAAAAAAAA1gAAAAAAAAAAAAAAOQAAAAAAAAA6AAAAAAAAAAAAAABDAQAAAAAAAEQBAAAAAAAAAAAAACUBAAAAAAAAJgEAAAAAAAAAAAAA1wAAAAAAAADYAAAAAAAAAAAAAAA6AAAAAAAAADsAAAAAAAAAAAAAAEcBAAAAAAAASAEAAAAAAAAAAAAAKAEAAAAAAAApAQAAAAAAAAAAAADZAAAAAAAAANoAAAAAAAAAAAAAADsAAAAAAAAAPAAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAA8L8"
 				],
 				[
-					6,
-					1,
-					"reindent",
-					null,
-					"AQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA",
-					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					7,
-					2,
-					"left_delete",
-					null,
-					"AQAAAAAAAAAAAAAAAAAAAAAAAAABAAAACQ",
-					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					8,
+					37,
 					1,
 					"insert",
 					{
-						"characters": "mul"
+						"characters": " ="
 					},
-					"AwAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAMAAAAAAAAAAAAAAA",
-					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+					"AgAAADEAAAAAAAAAMgAAAAAAAAAAAAAAMgAAAAAAAAAzAAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAxAAAAAAAAADEAAAAAAAAAAAAAAAAA8L8"
 				],
 				[
-					10,
+					38,
+					1,
+					"insert",
+					{
+						"characters": " 0"
+					},
+					"AgAAADMAAAAAAAAANAAAAAAAAAAAAAAANAAAAAAAAAA1AAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAzAAAAAAAAADMAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					43,
+					1,
+					"insert",
+					{
+						"characters": "\nflag"
+					},
+					"BgAAAOQAAAAAAAAA5QAAAAAAAAAAAAAA5QAAAAAAAADoAAAAAAAAAAAAAADoAAAAAAAAAOkAAAAAAAAAAAAAAOkAAAAAAAAA6gAAAAAAAAAAAAAA6gAAAAAAAADrAAAAAAAAAAAAAADrAAAAAAAAAOwAAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADkAAAAAAAAAOQAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					44,
+					1,
+					"insert",
+					{
+						"characters": " ="
+					},
+					"AgAAAOwAAAAAAAAA7QAAAAAAAAAAAAAA7QAAAAAAAADuAAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADsAAAAAAAAAOwAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					45,
+					1,
+					"insert",
+					{
+						"characters": " 1;"
+					},
+					"AwAAAO4AAAAAAAAA7wAAAAAAAAAAAAAA7wAAAAAAAADwAAAAAAAAAAAAAADwAAAAAAAAAPEAAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADuAAAAAAAAAO4AAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					55,
 					1,
 					"delete_word",
 					{
 						"forward": false
 					},
-					"AQAAAAAAAAAAAAAAAAAAAAAAAAADAAAAbXVs",
-					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAwAAAAAAAAADAAAAAAAAAAAAAAAAAPC/"
+					"AQAAADMBAAAAAAAAMwEAAAAAAAAQAAAAbGFzX2luZGV4ICE9IC0gMQ",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAzAQAAAAAAAEMBAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					56,
+					1,
+					"insert",
+					{
+						"characters": "flag"
+					},
+					"BAAAADMBAAAAAAAANAEAAAAAAAAAAAAANAEAAAAAAAA1AQAAAAAAAAAAAAA1AQAAAAAAADYBAAAAAAAAAAAAADYBAAAAAAAANwEAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAzAQAAAAAAADMBAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					57,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAADcBAAAAAAAAOAEAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA3AQAAAAAAADcBAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					58,
+					1,
+					"insert",
+					{
+						"characters": "=="
+					},
+					"AgAAADgBAAAAAAAAOQEAAAAAAAAAAAAAOQEAAAAAAAA6AQAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA4AQAAAAAAADgBAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					59,
+					1,
+					"insert",
+					{
+						"characters": " 1"
+					},
+					"AgAAADoBAAAAAAAAOwEAAAAAAAAAAAAAOwEAAAAAAAA8AQAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA6AQAAAAAAADoBAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					64,
+					1,
+					"left_delete",
+					null,
+					"AQAAAI4BAAAAAAAAjgEAAAAAAAALAAAACgkJCXJldHVybjs",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACZAQAAAAAAAI4BAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					65,
+					1,
+					"insert",
+					{
+						"characters": "\nbreak;"
+					},
+					"CAAAAI4BAAAAAAAAjwEAAAAAAAAAAAAAjwEAAAAAAACSAQAAAAAAAAAAAACSAQAAAAAAAJMBAAAAAAAAAAAAAJMBAAAAAAAAlAEAAAAAAAAAAAAAlAEAAAAAAACVAQAAAAAAAAAAAACVAQAAAAAAAJYBAAAAAAAAAAAAAJYBAAAAAAAAlwEAAAAAAAAAAAAAlwEAAAAAAACYAQAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACOAQAAAAAAAI4BAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					68,
+					1,
+					"left_delete",
+					null,
+					"AQAAACMBAAAAAAAAIwEAAAAAAAAJAAAACglyZXR1cm47",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAsAQAAAAAAACMBAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					69,
+					1,
+					"insert",
+					{
+						"characters": "\nbreak;"
+					},
+					"CAAAACMBAAAAAAAAJAEAAAAAAAAAAAAAJAEAAAAAAAAlAQAAAAAAAAAAAAAlAQAAAAAAACYBAAAAAAAAAAAAACYBAAAAAAAAJwEAAAAAAAAAAAAAJwEAAAAAAAAoAQAAAAAAAAAAAAAoAQAAAAAAACkBAAAAAAAAAAAAACkBAAAAAAAAKgEAAAAAAAAAAAAAKgEAAAAAAAArAQAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAjAQAAAAAAACMBAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					82,
+					2,
+					"left_delete",
+					null,
+					"AgAAACsAAAAAAAAAKwAAAAAAAAABAAAALCoAAAAAAAAAKgAAAAAAAAABAAAAIA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAsAAAAAAAAACwAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					90,
+					1,
+					"delete_word",
+					{
+						"forward": false
+					},
+					"AQAAAKwAAAAAAAAArAAAAAAAAAAEAAAAZWxzZQ",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACwAAAAAAAAALAAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					91,
+					1,
+					"insert",
+					{
+						"characters": "if)"
+					},
+					"AwAAAKwAAAAAAAAArQAAAAAAAAAAAAAArQAAAAAAAACuAAAAAAAAAAAAAACuAAAAAAAAAK8AAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACsAAAAAAAAAKwAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					92,
+					1,
+					"left_delete",
+					null,
+					"AQAAAK4AAAAAAAAArgAAAAAAAAABAAAAKQ",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACvAAAAAAAAAK8AAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					93,
+					1,
+					"insert_snippet",
+					{
+						"contents": "($0)"
+					},
+					"AQAAAK4AAAAAAAAAsAAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACuAAAAAAAAAK4AAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					94,
+					1,
+					"insert",
+					{
+						"characters": "s"
+					},
+					"AQAAAK8AAAAAAAAAsAAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACvAAAAAAAAAK8AAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					95,
+					1,
+					"insert_snippet",
+					{
+						"contents": "[$0]"
+					},
+					"AQAAALAAAAAAAAAAsgAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACwAAAAAAAAALAAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					96,
+					1,
+					"insert",
+					{
+						"characters": "i"
+					},
+					"AQAAALEAAAAAAAAAsgAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACxAAAAAAAAALEAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					98,
+					1,
+					"insert",
+					{
+						"characters": " =="
+					},
+					"AwAAALMAAAAAAAAAtAAAAAAAAAAAAAAAtAAAAAAAAAC1AAAAAAAAAAAAAAC1AAAAAAAAALYAAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACzAAAAAAAAALMAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					99,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAALYAAAAAAAAAtwAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC2AAAAAAAAALYAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					100,
+					1,
+					"insert_snippet",
+					{
+						"contents": "'$0'"
+					},
+					"AQAAALcAAAAAAAAAuQAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC3AAAAAAAAALcAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					101,
+					1,
+					"insert",
+					{
+						"characters": "C"
+					},
+					"AQAAALgAAAAAAAAAuQAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC4AAAAAAAAALgAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					10,
+					1,
+					"astyleformat",
+					null,
+					"AQAAAK4AAAAAAAAArwAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAARQEAAAAAAABFAQAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "/home/abj/.config/sublime-text-3/Packages/User/cp.sublime-build",
+			"settings":
+			{
+				"buffer_size": 642,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					39,
+					1,
+					"right_delete",
+					null,
+					"AQAAAB0CAAAAAAAAHQIAAAAAAAABAAAAaA",
+					"AQAAAAAAAAABAAAAHQIAAAAAAAAdAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					61,
+					1,
+					"insert",
+					{
+						"characters": "\\"
+					},
+					"AQAAAB0AAAAAAAAAHgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAHQAAAAAAAAAdAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					62,
+					8,
+					"left_delete",
+					null,
+					"CAAAAB0AAAAAAAAAHQAAAAAAAAABAAAAXBwAAAAAAAAAHAAAAAAAAAABAAAAMBsAAAAAAAAAGwAAAAAAAAABAAAAMhoAAAAAAAAAGgAAAAAAAAABAAAAKxkAAAAAAAAAGQAAAAAAAAABAAAAKxgAAAAAAAAAGAAAAAAAAAABAAAAYxcAAAAAAAAAFwAAAAAAAAABAAAAPRYAAAAAAAAAFgAAAAAAAAABAAAAZA",
+					"AQAAAAAAAAABAAAAHgAAAAAAAAAeAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					63,
+					4,
+					"left_delete",
+					null,
+					"BAAAABUAAAAAAAAAFQAAAAAAAAABAAAAdBQAAAAAAAAAFAAAAAAAAAABAAAAcxMAAAAAAAAAEwAAAAAAAAABAAAALRIAAAAAAAAAEgAAAAAAAAABAAAAIA",
+					"AQAAAAAAAAABAAAAFgAAAAAAAAAWAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					91,
+					1,
+					"insert",
+					{
+						"characters": " -sr"
+					},
+					"BAAAABIAAAAAAAAAEwAAAAAAAAAAAAAAEwAAAAAAAAAUAAAAAAAAAAAAAAAUAAAAAAAAABUAAAAAAAAAAAAAABUAAAAAAAAAFgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAEgAAAAAAAAASAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					92,
+					1,
+					"left_delete",
+					null,
+					"AQAAABUAAAAAAAAAFQAAAAAAAAABAAAAcg",
+					"AQAAAAAAAAABAAAAFgAAAAAAAAAWAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					93,
+					1,
+					"insert",
+					{
+						"characters": "td=c"
+					},
+					"BAAAABUAAAAAAAAAFgAAAAAAAAAAAAAAFgAAAAAAAAAXAAAAAAAAAAAAAAAXAAAAAAAAABgAAAAAAAAAAAAAABgAAAAAAAAAGQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAFQAAAAAAAAAVAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					94,
+					1,
+					"insert",
+					{
+						"characters": "++20"
+					},
+					"BAAAABkAAAAAAAAAGgAAAAAAAAAAAAAAGgAAAAAAAAAbAAAAAAAAAAAAAAAbAAAAAAAAABwAAAAAAAAAAAAAABwAAAAAAAAAHQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAGQAAAAAAAAAZAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "contest/notes.todo",
+			"settings":
+			{
+				"buffer_size": 1951,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": "\nI"
+					},
+					"AwAAAIQBAAAAAAAAhQEAAAAAAAAAAAAAhQEAAAAAAACHAQAAAAAAAAAAAACHAQAAAAAAAIgBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAhAEAAAAAAACEAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"left_delete",
+					null,
+					"AQAAAIcBAAAAAAAAhwEAAAAAAAABAAAASQ",
+					"AQAAAAAAAAABAAAAiAEAAAAAAACIAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"plain_tasks_new",
+					null,
+					"AQAAAIUBAAAAAAAAiQEAAAAAAAACAAAACQk",
+					"AQAAAAAAAAABAAAAhwEAAAAAAACHAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					3,
+					"left_delete",
+					null,
+					"AwAAAIgBAAAAAAAAiAEAAAAAAAABAAAACYcBAAAAAAAAhwEAAAAAAAADAAAA4piQhgEAAAAAAACGAQAAAAAAAAEAAAAJ",
+					"AQAAAAAAAAABAAAAiQEAAAAAAACJAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					10,
+					1,
+					"plain_tasks_new",
+					null,
+					"AQAAAIUBAAAAAAAAiAEAAAAAAAABAAAACQ",
+					"AQAAAAAAAAABAAAAhgEAAAAAAACGAQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					11,
 					1,
 					"insert",
 					{
-						"characters": "modu"
+						"characters": "tranfer"
 					},
-					"BAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAMAAAAAAAAAAAAAAAMAAAAAAAAABAAAAAAAAAAAAAAA",
-					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+					"BwAAAIgBAAAAAAAAiQEAAAAAAAAAAAAAiQEAAAAAAACKAQAAAAAAAAAAAACKAQAAAAAAAIsBAAAAAAAAAAAAAIsBAAAAAAAAjAEAAAAAAAAAAAAAjAEAAAAAAACNAQAAAAAAAAAAAACNAQAAAAAAAI4BAAAAAAAAAAAAAI4BAAAAAAAAjwEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAiAEAAAAAAACIAQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					12,
 					1,
-					"insert_completion",
+					"insert",
 					{
-						"completion": "const int M    =     1e9 + 7;\nint add(int a, int b) {\n\ta += b;\n\treturn (a >= M ? a - M : a);\n}\nint mul(int a, int b) {\n\treturn (a * b) % M;\n}\nint sub(int a, int b) {\n\treturn (a - b + M) % M;\n}\nint powM(int b, int p) {\n\tint r = 1;\n\tfor (; p; b = mul(b, b), p >>= 1)\n\t\tif (p & 1)\n\t\t\tr = mul(r, b);\n\treturn r;\n}\nint invM(int x) {\n\treturn powM(x, M - 2);\n}\nint f[N], b[N];\nvoid binomialCoeff() {\n\tf[0] = 1;\n\tfor (int i = 1; i <= N - 1; i++)\n\t\tf[i] = mul(f[i - 1], i);\n\tb[N - 1] = powM(f[N - 1], M - 2);\n\tfor (int i = N - 2; i >= 0; i--)\n\t\tb[i] = mul(b[i + 1], i + 1);\n}\nint C(int n, int r) {\n\treturn (r > n ? 0LL : mul(f[n], mul(b[r], b[n - r])));\n}",
-						"format": "snippet",
-						"keep_prefix": false,
-						"must_insert": false,
-						"trigger": "Modulo Combinatorics"
+						"characters": " bits"
 					},
-					"AgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAbW9kdQAAAAAAAAAAhQIAAAAAAAAAAAAA",
-					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAPC/"
+					"BQAAAI8BAAAAAAAAkAEAAAAAAAAAAAAAkAEAAAAAAACRAQAAAAAAAAAAAACRAQAAAAAAAJIBAAAAAAAAAAAAAJIBAAAAAAAAkwEAAAAAAAAAAAAAkwEAAAAAAACUAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAjwEAAAAAAACPAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": " fi;e"
+					},
+					"BQAAAJQBAAAAAAAAlQEAAAAAAAAAAAAAlQEAAAAAAACWAQAAAAAAAAAAAACWAQAAAAAAAJcBAAAAAAAAAAAAAJcBAAAAAAAAmAEAAAAAAAAAAAAAmAEAAAAAAACZAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAlAEAAAAAAACUAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					14,
+					2,
+					"left_delete",
+					null,
+					"AgAAAJgBAAAAAAAAmAEAAAAAAAABAAAAZZcBAAAAAAAAlwEAAAAAAAABAAAAOw",
+					"AQAAAAAAAAABAAAAmQEAAAAAAACZAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"insert",
+					{
+						"characters": "le"
+					},
+					"AgAAAJcBAAAAAAAAmAEAAAAAAAAAAAAAmAEAAAAAAACZAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAlwEAAAAAAACXAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					16,
+					1,
+					"insert",
+					{
+						"characters": "\n\t"
+					},
+					"AwAAAJkBAAAAAAAAmgEAAAAAAAAAAAAAmgEAAAAAAACbAQAAAAAAAAAAAACbAQAAAAAAAJwBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAmQEAAAAAAACZAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					17,
+					1,
+					"paste",
+					null,
+					"AQAAAJwBAAAAAAAAyQEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAnAEAAAAAAACcAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
+					1,
+					"left_delete",
+					null,
+					"AQAAAMgBAAAAAAAAyAEAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAyQEAAAAAAADJAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					22,
+					1,
+					"insert",
+					{
+						"characters": "bits/"
+					},
+					"BQAAAMgBAAAAAAAAyQEAAAAAAAAAAAAAyQEAAAAAAADKAQAAAAAAAAAAAADKAQAAAAAAAMsBAAAAAAAAAAAAAMsBAAAAAAAAzAEAAAAAAAAAAAAAzAEAAAAAAADNAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAyAEAAAAAAADIAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					25,
+					1,
+					"delete_word",
+					{
+						"forward": false
+					},
+					"AQAAAJABAAAAAAAAkAEAAAAAAAAEAAAAYml0cw",
+					"AQAAAAAAAAABAAAAlAEAAAAAAACUAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					26,
+					1,
+					"insert",
+					{
+						"characters": "precompi"
+					},
+					"CAAAAJABAAAAAAAAkQEAAAAAAAAAAAAAkQEAAAAAAACSAQAAAAAAAAAAAACSAQAAAAAAAJMBAAAAAAAAAAAAAJMBAAAAAAAAlAEAAAAAAAAAAAAAlAEAAAAAAACVAQAAAAAAAAAAAACVAQAAAAAAAJYBAAAAAAAAAAAAAJYBAAAAAAAAlwEAAAAAAAAAAAAAlwEAAAAAAACYAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAkAEAAAAAAACQAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"insert",
+					{
+						"characters": "led"
+					},
+					"AwAAAJgBAAAAAAAAmQEAAAAAAAAAAAAAmQEAAAAAAACaAQAAAAAAAAAAAACaAQAAAAAAAJsBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAmAEAAAAAAACYAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					28,
+					1,
+					"insert",
+					{
+						"characters": " f"
+					},
+					"AgAAAJsBAAAAAAAAnAEAAAAAAAAAAAAAnAEAAAAAAACdAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAmwEAAAAAAACbAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					29,
+					1,
+					"left_delete",
+					null,
+					"AQAAAJwBAAAAAAAAnAEAAAAAAAABAAAAZg",
+					"AQAAAAAAAAABAAAAnQEAAAAAAACdAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					30,
+					1,
+					"insert",
+					{
+						"characters": "header"
+					},
+					"BgAAAJwBAAAAAAAAnQEAAAAAAAAAAAAAnQEAAAAAAACeAQAAAAAAAAAAAACeAQAAAAAAAJ8BAAAAAAAAAAAAAJ8BAAAAAAAAoAEAAAAAAAAAAAAAoAEAAAAAAAChAQAAAAAAAAAAAAChAQAAAAAAAKIBAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAnAEAAAAAAACcAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					37,
+					1,
+					"insert",
+					{
+						"characters": "s"
+					},
+					"AQAAAIwBAAAAAAAAjQEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAjAEAAAAAAACMAQAAAAAAAAAAAAAAAPC/"
 				]
 			]
-		},
-		{
-			"contents": "{\n  \"nbformat\": 4,\n  \"nbformat_minor\": 0,\n  \"metadata\": {\n    \"colab\": {\n      \"name\": \"NLP_CS60075_A21_Assn1_18IE10001.ipynb\",\n      \"provenance\": [],\n      \"collapsed_sections\": [],\n      \"toc_visible\": true,\n      \"include_colab_link\": true\n    },\n    \"kernelspec\": {\n      \"name\": \"python3\",\n      \"display_name\": \"Python 3\"\n    },\n    \"language_info\": {\n      \"name\": \"python\"\n    },\n    \"accelerator\": \"GPU\"\n  },\n  \"cells\": [\n    {\n      \"cell_type\": \"markdown\",\n      \"metadata\": {\n        \"id\": \"view-in-github\",\n        \"colab_type\": \"text\"\n      },\n      \"source\": [\n        \"<a href=\\\"https://colab.research.google.com/github/AbhJ/NLPAssignments/blob/main/NLP_CS60075_A21_Assn1_18IE10001.ipynb\\\" target=\\\"_parent\\\"><img src=\\\"https://colab.research.google.com/assets/colab-badge.svg\\\" alt=\\\"Open In Colab\\\"/></a>\"\n      ]\n    },\n    {\n      \"cell_type\": \"markdown\",\n      \"metadata\": {\n        \"id\": \"4Z_wN2v1RT1F\"\n      },\n      \"source\": [\n        \"# **Assignment-1 for CS60075: Natural Language Processing**\\n\",\n        \"\\n\",\n        \"#### Instructor : Prof. Sudeshna Sarkar\\n\",\n        \"\\n\",\n        \"#### Teaching Assistants : Alapan Kuila, Aniruddha Roy, Prithwish Jana, Udit Dharmin Desai\\n\",\n        \"\\n\",\n        \"#### Date of Announcement: 4th Sept, 2021\\n\",\n        \"#### Deadline for Submission: 11.59pm on Sunday, 12th Sept, 2021 \\n\",\n        \"\\n\",\n        \"#### (**NOTE**: Submit a .zip file, containing this .ipynb file, named as `<Your_Roll_Number>_Assn1_NLP_A21.ipynb` and the raw text corpus named `<Your_Roll_Number>_Assn1_rawCorpus.txt`. For example, if your roll number is 20XX12Y45, name the .ipynb file as `20XX12Y45_Assn1_NLP_A21.ipynb`. Name the .zip as `<Your_Roll_Number>_Assn1_NLP_A21.zip`. Write your code in the respective designated portion of the .ipynb. Also before submitting, make sure that all the outputs of your code are present in the .ipynb file itself.)\"\n      ]\n    },\n    {\n      \"cell_type\": \"markdown\",\n      \"metadata\": {\n        \"id\": \"3a35tmEySCx7\"\n      },\n      \"source\": [\n        \"### **Submission Details:**\\n\",\n        \"Name: Abhijay Mitra\\n\",\n        \"\\n\",\n        \"Roll No.: 18IE10001\\n\",\n        \"\\n\",\n        \"Department: Electrical Engineering\\n\",\n        \"\\n\",\n        \"Email-ID: mitraabhijay@gmail.com\"\n      ]\n    },\n    {\n      \"cell_type\": \"markdown\",\n      \"metadata\": {\n        \"id\": \"9weHMmyd8fnq\"\n      },\n      \"source\": [\n        \"## **Reading a Raw Text Corpus**\"\n      ]\n    },\n    {\n      \"cell_type\": \"markdown\",\n      \"metadata\": {\n        \"id\": \"DmSy_LOK2aGQ\"\n      },\n      \"source\": [\n        \"Retrieve & save raw corpus\"\n      ]\n    },\n    {\n      \"cell_type\": \"code\",\n      \"metadata\": {\n        \"id\": \"rku6rV2ORpZA\"\n      },\n      \"source\": [\n        \"# To construct your corpus, retrieve (through Python code) Chapter I to Chapter X,\\n\",\n        \"# both inclusive, from the link below:\\n\",\n        \"# \\\"https://www.gutenberg.org/files/730/730-0.txt\\\"\\n\",\n        \"# Save this corpus in a text file, named as 'rawCorpus.txt'\\n\",\n        \"# Print the total number of characters in the text file \\n\",\n        \"\\n\",\n        \"# *** Write code ***\\n\",\n        \"\\n\",\n        \"from urllib.request import urlopen\\n\",\n        \"with urlopen('https://www.gutenberg.org/files/730/730-0.txt') as url:\\n\",\n        \"    textFile = url.read().decode('utf8');\\n\",\n        \"insideFlag = 0\\n\",\n        \"\\n\",\n        \"\\n\",\n        \"startPos = textFile.find('CHAPTER I')\\n\",\n        \"endinPos = textFile.find('CHAPTER XI')\\n\",\n        \"\\n\",\n        \"text = textFile[startPos: endinPos] \\n\",\n        \"\\n\",\n        \"corpusFile = open('rawCorpus.txt', 'w')\\n\",\n        \"corpusFile.write(text)\\n\",\n        \"corpusFile.close()\"\n      ],\n      \"execution_count\": 26,\n      \"outputs\": []\n    },\n    {\n      \"cell_type\": \"markdown\",\n      \"metadata\": {\n        \"id\": \"6KZIOy0Y2hzQ\"\n      },\n      \"source\": [\n        \"Read the corpus\"\n      ]\n    },\n    {\n      \"cell_type\": \"code\",\n      \"metadata\": {\n        \"id\": \"DsdBJa_l2l7g\",\n        \"colab\": {\n          \"base_uri\": \"https://localhost:8080/\"\n        },\n        \"outputId\": \"5ccf726f-ff68-4cc6-d97b-ad079b22c955\"\n      },\n      \"source\": [\n        \"# Read the corpus from rawCorpus.txt, in a variable `rawReadCorpus`\\n\",\n        \"# *** Write code ***\\n\",\n        \"\\n\",\n        \"rawReadCorpus = open('rawCorpus.txt', 'r').read()\\n\",\n        \"\\n\",\n        \"print (\\\"Total # of characters in read dataset: {}\\\".format(len(rawReadCorpus)))\"\n      ],\n      \"execution_count\": 27,\n      \"outputs\": [\n        {\n          \"output_type\": \"stream\",\n          \"name\": \"stdout\",\n          \"text\": [\n            \"Total # of characters in read dataset: 148717\\n\"\n          ]\n        }\n      ]\n    },\n    {\n      \"cell_type\": \"markdown\",\n      \"metadata\": {\n        \"id\": \"xhkmGsSoV0zG\"\n      },\n      \"source\": [\n        \"## **Installing NLTK**\\n\",\n        \"\\n\",\n        \"The Natural Language Toolkit ([NLTK](https://www.nltk.org/)) is a Python module that is intended to support research and teaching in NLP or closely related areas. \\n\",\n        \"\\n\",\n        \"Detailed installation instructions to install NLTK can be found at this [link](https://www.nltk.org/install.html).\\n\",\n        \"\\n\",\n        \"To ensure uniformity, we suggest to use **python3**. You can download Anaconda3 and create a separate environment to do this assignment, eg.\\n\",\n        \"```bash\\n\",\n        \"conda create -n myenv python=3.6\\n\",\n        \"conda activate myenv\\n\",\n        \"```\\n\",\n        \"\\n\",\n        \"The link to anaconda3 for Windows and Linux is available here https://docs.anaconda.com/anaconda/install/. Subsequently, you can install NLTK through the following commands:\\n\",\n        \"```bash\\n\",\n        \"sudo pip3 install nltk \\n\",\n        \"python3 \\n\",\n        \"nltk.download()\\n\",\n        \"```\"\n      ]\n    },\n    {\n      \"cell_type\": \"markdown\",\n      \"metadata\": {\n        \"id\": \"utKtZeHq4N98\"\n      },\n      \"source\": [\n        \"## **Preprocessing the corpus**\"\n      ]\n    },\n    {\n      \"cell_type\": \"markdown\",\n      \"metadata\": {\n        \"id\": \"_gP9ihZnn_9W\"\n      },\n      \"source\": [\n        \"\"\n      ]\n    },\n    {\n      \"cell_type\": \"markdown\",\n      \"metadata\": {\n        \"id\": \"5-LSUX__82Ff\"\n      },\n      \"source\": [\n        \"**Tokenize into words and sentences, using NLTK library:** Using the NLTK modules imported above, retrieve a case-insensitive preprocessed model. Make sure to take care of words like \\\"\\\\_will\\\\_\\\" (that should ideally appear as \\\"will\\\"), \\\"wouldn't\\\" (that should ideally appear as a single word, and not multiple tokens) and other occurences of special cases that you find in the raw corpus. \"\n      ]\n    },\n    {\n      \"cell_type\": \"code\",\n      \"metadata\": {\n        \"id\": \"2g7eO4Dm4jIn\",\n        \"colab\": {\n          \"base_uri\": \"https://localhost:8080/\"\n        },\n        \"outputId\": \"458a3404-aec1-4ae5-8b5d-e350161521ca\"\n      },\n      \"source\": [\n        \"# Importing modules\\n\",\n        \"import nltk\\n\",\n        \"nltk.download('punkt') # For tokenizers\\n\",\n        \"from nltk.tokenize import word_tokenize,sent_tokenize\"\n      ],\n      \"execution_count\": 28,\n      \"outputs\": [\n        {\n          \"output_type\": \"stream\",\n          \"name\": \"stdout\",\n          \"text\": [\n            \"[nltk_data] Downloading package punkt to /root/nltk_data...\\n\",\n            \"[nltk_data]   Package punkt is already up-to-date!\\n\"\n          ]\n        }\n      ]\n    },\n    {\n      \"cell_type\": \"code\",\n      \"metadata\": {\n        \"id\": \"cWIzYXyz9Zt_\",\n        \"colab\": {\n          \"base_uri\": \"https://localhost:8080/\"\n        },\n        \"outputId\": \"9916bd2f-3460-4530-bcc1-3db9f3bbf9fc\"\n      },\n      \"source\": [\n        \"# *** Write code for preprocessing the corpus ***\\n\",\n        \"\\n\",\n        \"text = rawReadCorpus.replace('\\\\n', ' ')\\n\",\n        \"\\n\",\n        \"def tokenisationMethodForSent(text):\\n\",\n        \"\\n\",\n        \"    unwantedPunctuations = '\\\\\\\"’—”“\\\"#$%&()*+,-/:;<=>?@[\\\\]^_`{|}'\\n\",\n        \"\\n\",\n        \"    text = \\\"\\\".join([char for char in text if char not in unwantedPunctuations])\\n\",\n        \"\\n\",\n        \"    text = sent_tokenize(text)\\n\",\n        \"\\n\",\n        \"    return [item.lower() for item in text]\\n\",\n        \"\\n\",\n        \"def tokenisationMethodForWord(text):\\n\",\n        \"\\n\",\n        \"    unwantedPunctuations = '\\\\\\\"’—”“\\\"#$%&()*+,-/:;<=>@[\\\\]^_`{|}'\\n\",\n        \"\\n\",\n        \"    text = \\\"\\\".join([char for char in text if char not in unwantedPunctuations])\\n\",\n        \"\\n\",\n        \"    text = text.replace('.', ' ')\\n\",\n        \"    text = text.replace('?', ' ')\\n\",\n        \"    text = text.replace('!', ' ')\\n\",\n        \"    \\n\",\n        \"    text = word_tokenize(text)\\n\",\n        \"\\n\",\n        \"    return [item.lower() for item in text]\\n\",\n        \"\\n\",\n        \"textTokenisedToSent = tokenisationMethodForSent(text)\\n\",\n        \"textTokenisedToWord = tokenisationMethodForWord(text)\\n\",\n        \"\\n\",\n        \"# Print first 5 sentences of your preprocessed corpus *** Write code ***\\n\",\n        \"# Print first 5 words/tokens of your preprocessed corpus *** Write code ***\\n\",\n        \"\\n\",\n        \"print('First 5 sentences are: ', textTokenisedToSent[:5])\\n\",\n        \"print('First 5 words are:     ', textTokenisedToWord[:5])\"\n      ],\n      \"execution_count\": 29,\n      \"outputs\": [\n        {\n          \"output_type\": \"stream\",\n          \"name\": \"stdout\",\n          \"text\": [\n            \"First 5 sentences are:  ['chapter i.', 'treats of the place where oliver twist was born and of the circumstances attending his birth   among other public buildings in a certain town which for many reasons it will be prudent to refrain from mentioning and to which i will assign no fictitious name there is one anciently common to most towns great or small to wit a workhouse and in this workhouse was born on a day and date which i need not trouble myself to repeat inasmuch as it can be of no possible consequence to the reader in this stage of the business at all events the item of mortality whose name is prefixed to the head of this chapter.', 'for a long time after it was ushered into this world of sorrow and trouble by the parish surgeon it remained a matter of considerable doubt whether the child would survive to bear any name at all in which case it is somewhat more than probable that these memoirs would never have appeared or if they had that being comprised within a couple of pages they would have possessed the inestimable merit of being the most concise and faithful specimen of biography extant in the literature of any age or country.', 'although i am not disposed to maintain that the being born in a workhouse is in itself the most fortunate and enviable circumstance that can possibly befall a human being i do mean to say that in this particular instance it was the best thing for oliver twist that could by possibility have occurred.', 'the fact is that there was considerable difficulty in inducing oliver to take upon himself the office of respirationa troublesome practice but one which custom has rendered necessary to our easy existence and for some time he lay gasping on a little flock mattress rather unequally poised between this world and the next the balance being decidedly in favour of the latter.']\\n\",\n            \"First 5 words are:      ['chapter', 'i', 'treats', 'of', 'the']\\n\"\n          ]\n        }\n      ]\n    },\n    {\n      \"cell_type\": \"markdown\",\n      \"metadata\": {\n        \"id\": \"eZ75_a1QL70J\"\n      },\n      \"source\": [\n        \"**Perform the following tasks for the given corpus:**\\n\",\n        \"1. Print the average number of tokens per sentence.\\n\",\n        \"2. Print the length of the longest and the shortest sentence, that contains the word 'Oliver' ('Oliver' is case-insensitive).\\n\",\n        \"3. Print the number of unique tokens in the corpus, after stopword removal using the stopwords from NLTK (case-insensitive).\"\n      ]\n    },\n    {\n      \"cell_type\": \"code\",\n      \"metadata\": {\n        \"id\": \"pyG0g3oSADmV\",\n        \"colab\": {\n          \"base_uri\": \"https://localhost:8080/\"\n        },\n        \"outputId\": \"f7db4603-c30e-46f2-9ee0-f1352c1618f8\"\n      },\n      \"source\": [\n        \"# Importing modules\\n\",\n        \"nltk.download('stopwords')\\n\",\n        \"from nltk.corpus import stopwords\"\n      ],\n      \"execution_count\": 30,\n      \"outputs\": [\n        {\n          \"output_type\": \"stream\",\n          \"name\": \"stdout\",\n          \"text\": [\n            \"[nltk_data] Downloading package stopwords to /root/nltk_data...\\n\",\n            \"[nltk_data]   Package stopwords is already up-to-date!\\n\"\n          ]\n        }\n      ]\n    },\n    {\n      \"cell_type\": \"code\",\n      \"metadata\": {\n        \"id\": \"ydHIxC7lG7Py\",\n        \"colab\": {\n          \"base_uri\": \"https://localhost:8080/\"\n        },\n        \"outputId\": \"11bd372c-00d5-49b9-a71b-20784ff11330\"\n      },\n      \"source\": [\n        \"# *** Write code for the 2 tasks above ***\\n\",\n        \"\\n\",\n        \"print('1. The average number of tokens per sentence is: ' + str(len(textTokenisedToWord) / len(textTokenisedToSent)))\\n\",\n        \"\\n\",\n        \"maxLengthWithOliver = float('-inf')\\n\",\n        \"minLengthWithOliver = float('inf')\\n\",\n        \"\\n\",\n        \"for sent in textTokenisedToSent:\\n\",\n        \"    if 'Oliver'.lower() in sent:\\n\",\n        \"        maxLengthWithOliver = max(maxLengthWithOliver, len(sent))\\n\",\n        \"        minLengthWithOliver = min(minLengthWithOliver, len(sent))\\n\",\n        \"\\n\",\n        \"print('2.a. Length of the longest sentence with word \\\\'Oliver\\\\' is: ' + str(maxLengthWithOliver) + ' characters')\\n\",\n        \"print('2.b. Length of the shortest sentence with word \\\\'Oliver\\\\' is: ' + str(minLengthWithOliver) + ' characters')\\n\",\n        \"\\n\",\n        \"# removing stopwords\\n\",\n        \"tokensWithoutSw = [word for word in textTokenisedToWord if word not in stopwords.words('english')]\\n\",\n        \"\\n\",\n        \"# only storing unique words\\n\",\n        \"tokensUnique    = set(tokensWithoutSw)\\n\",\n        \"\\n\",\n        \"print('3. The number of unique tokens in the corpus, after stopword removal is: ' + str(len(tokensUnique)))\"\n      ],\n      \"execution_count\": 31,\n      \"outputs\": [\n        {\n          \"output_type\": \"stream\",\n          \"name\": \"stdout\",\n          \"text\": [\n            \"1. The average number of tokens per sentence is: 19.928134556574925\\n\",\n            \"2.a. Length of the longest sentence with word 'Oliver' is: 631 characters\\n\",\n            \"2.b. Length of the shortest sentence with word 'Oliver' is: 7 characters\\n\",\n            \"3. The number of unique tokens in the corpus, after stopword removal is: 4206\\n\"\n          ]\n        }\n      ]\n    },\n    {\n      \"cell_type\": \"markdown\",\n      \"metadata\": {\n        \"id\": \"X5RiDR7TJjKX\"\n      },\n      \"source\": [\n        \"## **Language Modeling**\"\n      ]\n    },\n    {\n      \"cell_type\": \"markdown\",\n      \"metadata\": {\n        \"id\": \"UJeTSt8HM95L\"\n      },\n      \"source\": [\n        \"### Task: In this sub-task, you are expected to carry out the following tasks:\\n\",\n        \"\\n\",\n        \"1. **Create the following language models** on the given corpus: <br>\\n\",\n        \"    i.   Unigram <br>\\n\",\n        \"    ii.  Bigram <br>\\n\",\n        \"    iii. Trigram <br>\\n\",\n        \"\\n\",\n        \"2. **List the top 10 bigrams, trigrams**\\n\",\n        \"(Additionally remove those items which contain only articles, prepositions, determiners eg. \\\"of the\\\", \\\"in a\\\", etc. List top-10 bigrams/trigrams in both the original and processed models).\"\n      ]\n    },\n    {\n      \"cell_type\": \"code\",\n      \"metadata\": {\n        \"id\": \"DlPXGvVaR-ka\",\n        \"colab\": {\n          \"base_uri\": \"https://localhost:8080/\"\n        },\n        \"outputId\": \"be2092aa-cac3-4219-ad23-3ec97c183f2b\"\n      },\n      \"source\": [\n        \"from nltk.util import ngrams\\n\",\n        \"\\n\",\n        \"unigrams=[]\\n\",\n        \"unigrams_Processed=[]\\n\",\n        \"bigrams=[]\\n\",\n        \"trigrams=[]\\n\",\n        \"tokenized_text = []\\n\",\n        \"\\n\",\n        \"stop_words = set(stopwords.words('english'))\\n\",\n        \"\\n\",\n        \"for content in textTokenisedToSent:\\n\",\n        \"    # *** Write code ***\\n\",\n        \"\\n\",\n        \"    sequence = tokenisationMethodForWord(content)\\n\",\n        \"\\n\",\n        \"    for word in sequence:\\n\",\n        \"        if (word == '.'):\\n\",\n        \"            sequence.remove(word) \\n\",\n        \"        else:\\n\",\n        \"            unigrams.append(word)\\n\",\n        \"            if word not in stop_words:\\n\",\n        \"                unigrams_Processed.append(word)\\n\",\n        \"\\n\",\n        \"    tokenized_text.append(sequence) \\n\",\n        \"\\n\",\n        \"    if len(content.split()) > 1:\\n\",\n        \"        bigrams.extend(list(ngrams(sequence, 2)))\\n\",\n        \"    if len(content.split()) > 2:\\n\",\n        \"        trigrams.extend(list(ngrams(sequence, 3)))\\n\",\n        \"\\n\",\n        \"print (\\\"Sample of n-grams:\\\\n\\\" + \\\"-------------------------\\\")\\n\",\n        \"print (\\\"--> UNIGRAMS: \\\\n\\\" + str(unigrams[:5]) + \\\" ...\\\\n\\\")\\n\",\n        \"print (\\\"--> BIGRAMS: \\\\n\\\" + str(bigrams[:5]) + \\\" ...\\\\n\\\")\\n\",\n        \"print (\\\"--> TRIGRAMS: \\\\n\\\" + str(trigrams[:5]) + \\\" ...\\\\n\\\")\\n\",\n        \"\\n\",\n        \"def removal(wordList):\\n\",\n        \"#removes ngrams containing only stopwords\\n\",\n        \"    wordListWithoutSw = []\\n\",\n        \"    for words in wordList:\\n\",\n        \"        flag = 0\\n\",\n        \"        for word in words:\\n\",\n        \"            if word in stop_words:\\n\",\n        \"                flag = flag or 0\\n\",\n        \"            else:\\n\",\n        \"                flag = flag or 1\\n\",\n        \"        if flag == 1:\\n\",\n        \"            wordListWithoutSw.append(words)\\n\",\n        \"    return wordListWithoutSw\\n\",\n        \"\\n\",\n        \"bigrams_Processed = removal(bigrams)\\n\",\n        \"trigrams_Processed = removal(trigrams) \\n\",\n        \"\\n\",\n        \"print (\\\"Sample of n-grams after processing:\\\\n\\\" + \\\"-------------------------\\\")\\n\",\n        \"print (\\\"--> UNIGRAMS: \\\\n\\\" + str(unigrams_Processed[:5]) + \\\" ...\\\\n\\\")\\n\",\n        \"print (\\\"--> BIGRAMS: \\\\n\\\" + str(bigrams_Processed[:5]) + \\\" ...\\\\n\\\")\\n\",\n        \"print (\\\"--> TRIGRAMS: \\\\n\\\" + str(trigrams_Processed[:5]) + \\\" ...\\\\n\\\")\\n\",\n        \"\\n\",\n        \"def get_ngrams_freqDist(n, ngramList):\\n\",\n        \"    #This function computes the frequency corresponding to each ngram in ngramList \\n\",\n        \"    #Here, n=1 for unigram, n=2 for bigram, etc.\\n\",\n        \"    #ngramList = list of unigrams when n=1, ngramList = list of bigrams when n=2\\n\",\n        \"    #Returns: ngram_freq_dict (a Python dictionary where key = a ngram, value = its frequency)\\n\",\n        \"    \\n\",\n        \"    # *** Write code ***\\n\",\n        \"    \\n\",\n        \"    return nltk.FreqDist(ngramList)\\n\",\n        \"\\n\",\n        \"unigrams_freqDist = get_ngrams_freqDist(1, unigrams)\\n\",\n        \"unigrams_Processed_freqDist = get_ngrams_freqDist(1, unigrams_Processed)\\n\",\n        \"bigrams_freqDist = get_ngrams_freqDist(2, bigrams)\\n\",\n        \"bigrams_Processed_freqDist = get_ngrams_freqDist(2, bigrams_Processed)\\n\",\n        \"trigrams_freqDist = get_ngrams_freqDist(3, trigrams)\\n\",\n        \"trigrams_Processed_freqDist = get_ngrams_freqDist(3, trigrams_Processed)\\n\",\n        \"\\n\",\n        \"print('top 10 unigrams, having highest frequency as in unigrams_freqDist are: ', '')\\n\",\n        \"print(unigrams_freqDist.most_common(10))\\n\",\n        \"\\n\",\n        \"# Print top 10 unigrams, having highest frequency as in unigrams_Processed_freqDist\\n\",\n        \"\\n\",\n        \"print('top 10 unigrams, having highest frequency as in unigrams_Processed_freqDist are: ', '')\\n\",\n        \"print(unigrams_Processed_freqDist.most_common(10))\\n\",\n        \"\\n\",\n        \"# Print top 10 bigrams, having highest frequency as in bigrams_freqDist\\n\",\n        \"\\n\",\n        \"print('top 10 bigrams, having highest frequency as in bigrams_freqDist are: ', '')\\n\",\n        \"print(bigrams_freqDist.most_common(10))\\n\",\n        \"\\n\",\n        \"# Print top 10 bigrams, having highest frequency as in bigrams_Processed_freqDist\\n\",\n        \"\\n\",\n        \"print('top 10 bigrams, having highest frequency as in bigrams_Processed_freqDist are: ', '')\\n\",\n        \"print(bigrams_Processed_freqDist.most_common(10))\\n\",\n        \"\\n\",\n        \"# Print top 10 trigrams, having highest frequency as in trigrams_freqDist\\n\",\n        \"\\n\",\n        \"print('top 10 trigrams, having highest frequency as in trigrams_freqDist are: ', '')\\n\",\n        \"print(trigrams_freqDist.most_common(10))\\n\",\n        \"\\n\",\n        \"# Print top 10 trigrams, having highest frequency as in trigrams_Processed_freqDist\\n\",\n        \"\\n\",\n        \"print('top 10 trigrams, having highest frequency as in trigrams_Processed_freqDist are: ', '')\\n\",\n        \"print(trigrams_Processed_freqDist.most_common(10))\"\n      ],\n      \"execution_count\": 32,\n      \"outputs\": [\n        {\n          \"output_type\": \"stream\",\n          \"name\": \"stdout\",\n          \"text\": [\n            \"Sample of n-grams:\\n\",\n            \"-------------------------\\n\",\n            \"--> UNIGRAMS: \\n\",\n            \"['chapter', 'i', 'treats', 'of', 'the'] ...\\n\",\n            \"\\n\",\n            \"--> BIGRAMS: \\n\",\n            \"[('chapter', 'i'), ('treats', 'of'), ('of', 'the'), ('the', 'place'), ('place', 'where')] ...\\n\",\n            \"\\n\",\n            \"--> TRIGRAMS: \\n\",\n            \"[('treats', 'of', 'the'), ('of', 'the', 'place'), ('the', 'place', 'where'), ('place', 'where', 'oliver'), ('where', 'oliver', 'twist')] ...\\n\",\n            \"\\n\",\n            \"Sample of n-grams after processing:\\n\",\n            \"-------------------------\\n\",\n            \"--> UNIGRAMS: \\n\",\n            \"['chapter', 'treats', 'place', 'oliver', 'twist'] ...\\n\",\n            \"\\n\",\n            \"--> BIGRAMS: \\n\",\n            \"[('chapter', 'i'), ('treats', 'of'), ('the', 'place'), ('place', 'where'), ('where', 'oliver')] ...\\n\",\n            \"\\n\",\n            \"--> TRIGRAMS: \\n\",\n            \"[('treats', 'of', 'the'), ('of', 'the', 'place'), ('the', 'place', 'where'), ('place', 'where', 'oliver'), ('where', 'oliver', 'twist')] ...\\n\",\n            \"\\n\",\n            \"top 10 unigrams, having highest frequency as in unigrams_freqDist are:  \\n\",\n            \"[('the', 1701), ('and', 857), ('a', 713), ('of', 673), ('to', 618), ('his', 455), ('he', 449), ('in', 441), ('was', 368), ('oliver', 278)]\\n\",\n            \"top 10 unigrams, having highest frequency as in unigrams_Processed_freqDist are:  \\n\",\n            \"[('oliver', 278), ('said', 212), ('mr', 191), ('bumble', 123), ('gentleman', 102), ('old', 89), ('would', 77), ('sowerberry', 77), ('replied', 74), ('boy', 74)]\\n\",\n            \"top 10 bigrams, having highest frequency as in bigrams_freqDist are:  \\n\",\n            \"[(('of', 'the'), 162), (('in', 'the'), 127), (('mr', 'bumble'), 108), (('to', 'the'), 91), (('said', 'the'), 90), (('he', 'had'), 67), (('he', 'was'), 62), (('on', 'the'), 60), (('in', 'a'), 55), (('with', 'a'), 54)]\\n\",\n            \"top 10 bigrams, having highest frequency as in bigrams_Processed_freqDist are:  \\n\",\n            \"[(('mr', 'bumble'), 108), (('said', 'the'), 90), (('the', 'old'), 53), (('old', 'gentleman'), 39), (('the', 'undertaker'), 36), (('said', 'mr'), 35), (('the', 'boy'), 35), (('the', 'gentleman'), 33), (('mrs', 'sowerberry'), 33), (('the', 'jew'), 33)]\\n\",\n            \"top 10 trigrams, having highest frequency as in trigrams_freqDist are:  \\n\",\n            \"[(('the', 'old', 'gentleman'), 29), (('gentleman', 'in', 'the'), 22), (('the', 'gentleman', 'in'), 20), (('the', 'white', 'waistcoat'), 20), (('said', 'mr', 'bumble'), 19), (('in', 'the', 'white'), 18), (('said', 'the', 'gentleman'), 14), (('said', 'the', 'undertaker'), 14), (('said', 'the', 'jew'), 14), (('sir', 'replied', 'oliver'), 12)]\\n\",\n            \"top 10 trigrams, having highest frequency as in trigrams_Processed_freqDist are:  \\n\",\n            \"[(('the', 'old', 'gentleman'), 29), (('gentleman', 'in', 'the'), 22), (('the', 'gentleman', 'in'), 20), (('the', 'white', 'waistcoat'), 20), (('said', 'mr', 'bumble'), 19), (('in', 'the', 'white'), 18), (('said', 'the', 'gentleman'), 14), (('said', 'the', 'undertaker'), 14), (('said', 'the', 'jew'), 14), (('sir', 'replied', 'oliver'), 12)]\\n\"\n          ]\n        }\n      ]\n    },\n    {\n      \"cell_type\": \"markdown\",\n      \"metadata\": {\n        \"id\": \"Lqu8nVV7NREo\"\n      },\n      \"source\": [\n        \"## **Next three words' Prediction using Smoothed Models**\"\n      ]\n    },\n    {\n      \"cell_type\": \"markdown\",\n      \"metadata\": {\n        \"id\": \"a2vnIM26b2WA\"\n      },\n      \"source\": [\n        \"For a bigram model, add-one smoothing is defined by $P_{Add-1}(w_i|w_{i-1})=\\\\frac{count(w_{i-1},w_i)+1}{count(w_{i-1})+V}$.\\n\",\n        \"That is, pretend we saw each word one more time than we did.\\n\",\n        \"\\n\",\n        \"You have two tasks here.\\n\",\n        \"\\n\",\n        \"First, compute the smoothed bigram and trigram models from the bigrams_freqDist and trigrams_freqDist you calculated above (use the unprocessed models). Second, using these smoothed models, predict the next 3 possible word sequences for testSent1, testSent2 and testSent3, using your smoothed models.\\n\",\n        \"\\n\",\n        \"As for example, for the string 'Raj has a' the answers can be as below: \\n\",\n        \"\\n\",\n        \"(1) Raj has a **beautiful red car**\\n\",\n        \"\\n\",\n        \"(2) Raj has a **charismatic magnetic personality**\"\n      ]\n    },\n    {\n      \"cell_type\": \"code\",\n      \"metadata\": {\n        \"id\": \"qAGB1_S8NThy\"\n      },\n      \"source\": [\n        \"testSent1 = \\\"There was a sudden jerk, a terrific convulsion of the limbs; and there he\\\"\\n\",\n        \"testSent2 = \\\"They made room for the stranger, but he sat down\\\"\\n\",\n        \"testSent3 = \\\"The hungry and destitute situation of the infant orphan was duly reported by\\\"\"\n      ],\n      \"execution_count\": 33,\n      \"outputs\": []\n    },\n    {\n      \"cell_type\": \"code\",\n      \"metadata\": {\n        \"id\": \"tWd8qiSMgrtT\",\n        \"colab\": {\n          \"base_uri\": \"https://localhost:8080/\"\n        },\n        \"outputId\": \"22294a8e-4ac8-499e-85cb-c6fa834973e6\"\n      },\n      \"source\": [\n        \"from nltk.probability import LaplaceProbDist\\n\",\n        \"from nltk.probability import FreqDist\\n\",\n        \"\\n\",\n        \"nGrams = {1:[], 2:[], 3:[]}\\n\",\n        \"for i in range(3):\\n\",\n        \"    for each in tokenized_text:\\n\",\n        \"        if len(each) > i:\\n\",\n        \"            for j in ngrams(each, i+1):\\n\",\n        \"                nGrams[i+1].append(j);\\n\",\n        \"nGramsVoc = {1:set([]), 2:set([]), 3:set([])}\\n\",\n        \"for i in range(3):\\n\",\n        \"    for gram in nGrams[i+1]:\\n\",\n        \"        if gram not in nGramsVoc[i+1]:\\n\",\n        \"            nGramsVoc[i+1].add(gram)\\n\",\n        \"total_ngrams = {1:-1, 2:-1, 3:-1}\\n\",\n        \"total_voc = {1:-1, 2:-1, 3:-1}\\n\",\n        \"for i in range(3):\\n\",\n        \"    total_ngrams[i+1] = len(nGrams[i+1])\\n\",\n        \"    total_voc[i+1] = len(nGramsVoc[i+1])                       \\n\",\n        \"ngrams_prob = {1:[], 2:[], 3:[]}\\n\",\n        \"for i in range(3):\\n\",\n        \"    for ngram in nGramsVoc[i+1]:\\n\",\n        \"        tlist = [ngram]\\n\",\n        \"        tlist.append(nGrams[i+1].count(ngram))\\n\",\n        \"        ngrams_prob[i+1].append(tlist)\\n\",\n        \"for i in range(3):\\n\",\n        \"    for ngram in ngrams_prob[i+1]:\\n\",\n        \"        ngram[-1] = (ngram[-1]+1)/(total_ngrams[i+1]+total_voc[i+1]) \\n\",\n        \"\\n\",\n        \"#Prints top 10 unigram, bigram, trigram after smoothing\\n\",\n        \"print(\\\"Most common n-grams without stopword removal and with add-1 smoothing: \\\\n\\\")\\n\",\n        \"for i in range(3):\\n\",\n        \"    ngrams_prob[i+1] = sorted(ngrams_prob[i+1], key = lambda x:x[1], reverse = True)\\n\",\n        \"    \\n\",\n        \"print (\\\"Most common unigrams: \\\", str(ngrams_prob[1][:10]))\\n\",\n        \"print (\\\"\\\\nMost common bigrams: \\\", str(ngrams_prob[2][:10]))\\n\",\n        \"print (\\\"\\\\nMost common trigrams: \\\", str(ngrams_prob[3][:10]))\\n\",\n        \"\\n\",\n        \"#smoothed models without stopwords removed are used\\n\",\n        \"token_1 = word_tokenize(testSent1)\\n\",\n        \"token_2 = word_tokenize(testSent2)\\n\",\n        \"token_3 = word_tokenize(testSent3)\\n\",\n        \"ngram_1 = {1:[], 2:[], 3:[]}   #to store the n-grams formed  \\n\",\n        \"ngram_2 = {1:[], 2:[], 3:[]}\\n\",\n        \"ngram_3 = {1:[], 2:[], 3:[]}\\n\",\n        \"for i in range(3):\\n\",\n        \"    ngram_1[i+1] = list(ngrams(token_1, i+1))[-1]\\n\",\n        \"    ngram_2[i+1] = list(ngrams(token_2, i+1))[-1]\\n\",\n        \"    ngram_3[i+1] = list(ngrams(token_3, i+1))[-1]\\n\",\n        \"\\n\",\n        \"for i in range(3):\\n\",\n        \"    ngrams_prob[i+1] = sorted(ngrams_prob[i+1], key = lambda x:x[1], reverse = True)\\n\",\n        \"    \\n\",\n        \"pred_1 = {1:[], 2:[], 3:[]}\\n\",\n        \"for i in range(3):\\n\",\n        \"    count = 0\\n\",\n        \"    if len(ngrams_prob) > i + 2:\\n\",\n        \"        for each in ngrams_prob[i+2]:\\n\",\n        \"            if each[0][:-1] == ngram_1[i+1]:      \\n\",\n        \"                count +=1\\n\",\n        \"                pred_1[i+1].append(each[0][-1])\\n\",\n        \"                if count == 3:\\n\",\n        \"                    break\\n\",\n        \"for i in range(3):\\n\",\n        \"    ngrams_prob[i+1] = sorted(ngrams_prob[i+1], key = lambda x:x[1], reverse = True)\\n\",\n        \"    \\n\",\n        \"pred_2 = {1:[], 2:[], 3:[]}\\n\",\n        \"for i in range(3):\\n\",\n        \"    count = 0\\n\",\n        \"    if len(ngrams_prob) > i + 2:\\n\",\n        \"        for each in ngrams_prob[i+2]:\\n\",\n        \"            if each[0][:-1] == ngram_2[i+1]:\\n\",\n        \"                count +=1\\n\",\n        \"                pred_2[i+1].append(each[0][-1])\\n\",\n        \"                if count == 3:\\n\",\n        \"                    break\\n\",\n        \"\\n\",\n        \"pred_3 = {1:[], 2:[], 3:[]}\\n\",\n        \"for i in range(3):\\n\",\n        \"    count = 0\\n\",\n        \"    if len(ngrams_prob) > i + 2:\\n\",\n        \"        for each in ngrams_prob[i+2]:\\n\",\n        \"            if each[0][:-1] == ngram_3[i+1]:\\n\",\n        \"                count +=1\\n\",\n        \"                pred_3[i+1].append(each[0][-1])\\n\",\n        \"                if count == 3:\\n\",\n        \"                    break\\n\",\n        \"\\n\",\n        \"print(\\\"Next word predictions for the strings using the probability models of bigrams, trigrams\\\\n\\\")\\n\",\n        \"print(\\\"String 1: \\\" + testSent1)\\n\",\n        \"print(\\\"Bigram model predictions: {}\\\" .format(pred_1[1]))\\n\",\n        \"print(\\\"String 2: \\\" + testSent2)\\n\",\n        \"print(\\\"Bigram model predictions: {}\\\" .format(pred_2[1]))\\n\",\n        \"print(\\\"String 3: \\\" + testSent3)\\n\",\n        \"print(\\\"Bigram model predictions: {}\\\" .format(pred_3[1]))\\n\"\n      ],\n      \"execution_count\": 34,\n      \"outputs\": [\n        {\n          \"output_type\": \"stream\",\n          \"name\": \"stdout\",\n          \"text\": [\n            \"Most common n-grams without stopword removal and with add-1 smoothing: \\n\",\n            \"\\n\",\n            \"Most common unigrams:  [[('the',), 0.056003422065743144], [('and',), 0.02823204238096805], [('a',), 0.023493797505840543], [('of',), 0.02217761837386068], [('to',), 0.02036787206738837], [('his',), 0.015004442104570432], [('he',), 0.014807015234773452], [('in',), 0.014543779408377481], [('was',), 0.012141752492514231], [('oliver',), 0.009180349445559541]]\\n\",\n            \"\\n\",\n            \"Most common bigrams:  [[('of', 'the'), 0.003980755610911667], [('in', 'the'), 0.0031259921361760324], [('mr', 'bumble'), 0.0026619776784624024], [('to', 'the'), 0.0022468068478765234], [('said', 'the'), 0.002222385034312648], [('he', 'had'), 0.0016606833223435172], [('he', 'was'), 0.001538574254524141], [('on', 'the'), 0.0014897306273963904], [('in', 'a'), 0.0013676215595770141], [('with', 'a'), 0.0013431997460131388]]\\n\",\n            \"\\n\",\n            \"Most common trigrams:  [[('the', 'old', 'gentleman'), 0.0006625880689975043], [('gentleman', 'in', 'the'), 0.0005079841862314199], [('the', 'gentleman', 'in'), 0.000463811648298253], [('the', 'white', 'waistcoat'), 0.000463811648298253], [('said', 'mr', 'bumble'), 0.0004417253793316695], [('in', 'the', 'white'), 0.000419639110365086], [('said', 'the', 'jew'), 0.00033129403449875215], [('said', 'the', 'gentleman'), 0.00033129403449875215], [('said', 'the', 'undertaker'), 0.00033129403449875215], [('sir', 'replied', 'oliver'), 0.0002871214965655852]]\\n\",\n            \"Next word predictions for the strings using the probability models of bigrams, trigrams\\n\",\n            \"\\n\",\n            \"String 1: There was a sudden jerk, a terrific convulsion of the limbs; and there he\\n\",\n            \"Bigram model predictions: ['had', 'was', 'would']\\n\",\n            \"String 2: They made room for the stranger, but he sat down\\n\",\n            \"Bigram model predictions: ['the', 'a', 'to']\\n\",\n            \"String 3: The hungry and destitute situation of the infant orphan was duly reported by\\n\",\n            \"Bigram model predictions: ['the', 'a', 'this']\\n\"\n          ]\n        }\n      ]\n    },\n    {\n      \"cell_type\": \"markdown\",\n      \"metadata\": {\n        \"id\": \"rxfeaacTdO6h\"\n      },\n      \"source\": [\n        \"Check the presence of these sentences in the original corpus at https://www.gutenberg.org/files/730/730-0.txt . How did your smoothed models perform in comparison to the original sentences? Compare them below.\\n\",\n        \"\\n\",\n        \"Did you notice something special about testSent3, in comparison to testSent1 and testSent2? If yes, what is it? Can you explain it?\\n\",\n        \"\\n\"\n      ]\n    },\n    {\n      \"cell_type\": \"markdown\",\n      \"metadata\": {\n        \"id\": \"LQ-AcC9liDAI\"\n      },\n      \"source\": [\n        \"\"\n      ]\n    },\n    {\n      \"cell_type\": \"markdown\",\n      \"metadata\": {\n        \"id\": \"nFMkW9hKecxK\"\n      },\n      \"source\": [\n        \"  - - - - - - - - - -\\n\",\n        \"  ** Answer here ** \\n\",\n        \"   - - - - - - - - - -\"\n      ]\n    },\n    {\n      \"cell_type\": \"markdown\",\n      \"metadata\": {\n        \"id\": \"vVBMcaAJXR9S\"\n      },\n      \"source\": [\n        \"Which of the three models you generated above (unigram, bigram, trigram) is better in terms of **perplexity**, for the three test sentences (unseen data)? Write a piece of code to justify your answer. \"\n      ]\n    },\n    {\n      \"cell_type\": \"markdown\",\n      \"metadata\": {\n        \"id\": \"AAPa1OVZX8uN\"\n      },\n      \"source\": [\n        \"  - - - - - - - - - -\\n\",\n        \"  ** Answer here ** \\n\",\n        \"   - - - - - - - - - -\"\n      ]\n    }\n  ]\n}",
-			"file": "/home/abj/Documents/7th sem notes/nlp/NLPAssignments/NLP_CS60075_A21_Assn1_18IE10001.ipynb",
-			"file_size": 34473,
-			"file_write_time": 132758477524278395,
-			"settings":
-			{
-				"buffer_size": 34457,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/abj/Documents/text_docs/time.txt",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
 		}
 	],
 	"build_system": "Packages/C++/C++ Single File.sublime-build",
@@ -520,8 +1035,36 @@
 		"selected_items":
 		[
 			[
+				"prefe",
+				"Preferences: Settings"
+			],
+			[
+				"open r",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
 				":w",
 				":w - Save"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				":W",
+				":w - Save"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Bookmarks: Clear All"
 			],
 			[
 				"git a",
@@ -564,10 +1107,6 @@
 				"Convert Case: Upper Case"
 			],
 			[
-				":W",
-				":w - Save"
-			],
-			[
 				":push",
 				"Git: Push"
 			],
@@ -588,10 +1127,6 @@
 				"WakaTime: Open Dashboard"
 			],
 			[
-				"inst",
-				"Package Control: Install Package"
-			],
-			[
 				"track",
 				"CodeTimeTracker: Open Dashboard"
 			],
@@ -606,10 +1141,6 @@
 			[
 				":th",
 				"UI: Select Theme"
-			],
-			[
-				"",
-				"Code Folding: Fold"
 			],
 			[
 				"theme",
@@ -654,10 +1185,6 @@
 			[
 				"insta",
 				"Package Control: Install Package"
-			],
-			[
-				"color",
-				"UI: Select Color Scheme"
 			],
 			[
 				"THEME",
@@ -820,10 +1347,6 @@
 				"PackageResourceViewer: Open Resource"
 			],
 			[
-				"open r",
-				"PackageResourceViewer: Open Resource"
-			],
-			[
 				"open reso",
 				"PackageResourceViewer: Open Resource"
 			],
@@ -877,10 +1400,6 @@
 			],
 			[
 				"indent",
-				"Indentation: Reindent Lines"
-			],
-			[
-				"inde",
 				"Indentation: Reindent Lines"
 			],
 			[
@@ -1026,10 +1545,6 @@
 			[
 				"paackag",
 				"Package Control: Install Package"
-			],
-			[
-				"ind",
-				"Indentation: Reindent Lines"
 			]
 		],
 		"width": 0.0
@@ -1053,25 +1568,38 @@
 	"expanded_folders":
 	[
 		"/home/abj/Documents/cp",
-		"/home/abj/Documents/cp/contest"
+		"/home/abj/Documents/cp/contest",
+		"/home/abj/Documents/cp/contest/bits"
 	],
 	"file_history":
 	[
+		"/home/abj/Documents/cp/contest/a.cpp",
+		"/home/abj/login-page-css/src/index.html",
+		"/home/abj/login-page-css/src/19-whatsapp/style.css",
+		"/home/abj/login-page-css/README.md",
+		"/home/abj/Documents/cp/contest/input.txt",
+		"/home/abj/Documents/cp/contest/output.txt",
+		"/home/abj/.cache/.fr-qtnc45/WhatsApp-Clone-CSS-master/Whatsapp web.html",
+		"/home/abj/login-page-css/src/19-whatsapp/Whatsapp web.html",
+		"/home/abj/Documents/learning_react/abj-blogs/public/manifest.json",
+		"/home/abj/Documents/cp/contest/d.cpp",
+		"/home/abj/Downloads/NLP_CS60075_A21_Assn1 (1).ipynb",
+		"/home/abj/Documents/cp/contest/c.cpp",
+		"/media/abj/Seagate Backup Plus Drive Ab J M/old_cp_files_3/A_Square_Inequality.cpp",
+		"/media/abj/Seagate Backup Plus Drive Ab J M/old_cp_files_3/atcoder_abc203_d.cpp",
+		"/home/abj/Documents/cp/contest/e.cpp",
+		"/media/abj/Seagate Backup Plus Drive Ab J M/old_cp_files_3/A_Red_and_Blue_Beans.cpp",
+		"/home/abj/Documents/7th sem notes/nlp/NLPAssignments/NLP_CS60075_A21_Assn1_18IE10001.ipynb",
+		"/home/abj/Documents/text_docs/time.txt",
 		"/home/abj/Documents/7th sem notes/nlp/NLP_CS60075_A21_Assn1_18IE10001.ipynb",
 		"/home/abj/Downloads/NLP_CS60075_A21_Assn1.ipynb",
-		"/home/abj/Documents/cp/contest/a.cpp",
-		"/home/abj/Documents/cp/contest/input.txt",
 		"/home/abj/Documents/cp/contest/b.cpp",
-		"/home/abj/Documents/cp/contest/c.cpp",
-		"/home/abj/Documents/cp/contest/d.cpp",
-		"/home/abj/Documents/cp/contest/e.cpp",
 		"/home/abj/Documents/cp/contest/f.cpp",
 		"/home/abj/Documents/cp/.gitignore",
 		"/home/abj/Documents/cp/contest/.gitignore",
 		"/home/abj/.config/sublime-text-3/Packages/User/cp.sublime-build",
 		"/home/abj/Documents/cp/contest/notes.todo",
 		"/home/abj/Documents/cp/contest/bits/stdc++.h",
-		"/home/abj/Documents/cp/contest/output.txt",
 		"/home/abj/Downloads/consistency_chapter_2_validation_input (1).txt",
 		"/home/abj/Documents/cp/contest/saved_files/facebook_hcup_2021_qroundB.cpp",
 		"/home/abj/Documents/cp/contest/saved_files/facebook_hcup_2021_qroundC1.cpp",
@@ -1172,19 +1700,7 @@
 		"/home/abj/Documents/cp/saved_files/codeforces1537E2.cpp",
 		"/home/abj/Documents/cp/untitled",
 		"/home/abj/Documents/cp/saved_files/leetcode/1915.cpp",
-		"/home/abj/Documents/cp/saved_files/abc204_b.cpp",
-		"/home/abj/Documents/cp/saved_files/abc204_e.cpp",
-		"/home/abj/Documents/cp/contest/bits/stdc++.h.gch",
-		"/home/abj/.config/sublime-text-3/Packages/User/Function Name Display.sublime-settings",
-		"/home/abj/.config/sublime-text-3/Packages/User/ClangAutoComplete.sublime-settings",
-		"/home/abj/.config/sublime-text-3/Packages/ClangAutoComplete/ClangAutoComplete.sublime-settings",
-		"/home/abj/.config/sublime-text-3/Packages/Function Name Display/Function Name Display.sublime-settings",
-		"/home/abj/Documents/cp/saved_files/leetcode/1928.cpp",
-		"/home/abj/Documents/cp/contest/1928.cpp",
-		"/home/abj/Documents/cp/saved_files/leetcode/1921.cpp",
-		"/home/abj/Documents/cp/saved_files/atcoder_abc210d.cpp",
-		"/home/abj/Documents/cp/saved_files/codeforces1530E.cpp",
-		"/home/abj/Documents/cp/saved_files/codeforces1530D.cpp"
+		"/home/abj/Documents/cp/saved_files/abc204_b.cpp"
 	],
 	"find":
 	{
@@ -1205,6 +1721,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"las",
 			"c",
 			"target",
 			"&&",
@@ -1331,8 +1848,7 @@
 			"s",
 			"pos",
 			"x",
-			"y",
-			"ans"
+			"y"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1359,53 +1875,23 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1,
+						"buffer_size": 418,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1,
-								1
+								257,
+								240
 							]
 						],
 						"settings":
 						{
-							"auto_name": "",
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/home/abj/Downloads/NLP_CS60075_A21_Assn1 (1).ipynb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 22961,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								321,
-								321
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JSON/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 2429.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
@@ -1413,20 +1899,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "contest/d.cpp",
+					"buffer": 1,
+					"file": "contest/a.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 1014,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								757,
+								757
 							]
 						],
 						"settings":
@@ -1437,25 +1923,25 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "contest/c.cpp",
+					"buffer": 2,
+					"file": "contest/b.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 645,
+						"buffer_size": 439,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								308,
-								308
+								326,
+								326
 							]
 						],
 						"settings":
@@ -1467,26 +1953,25 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "/home/abj/Documents/7th sem notes/nlp/NLPAssignments/NLP_CS60075_A21_Assn1_18IE10001.ipynb",
-					"selected": true,
+					"buffer": 3,
+					"file": "/home/abj/.config/sublime-text-3/Packages/User/cp.sublime-build",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 34457,
+						"buffer_size": 642,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								642,
+								642
 							]
 						],
 						"settings":
@@ -1494,52 +1979,46 @@
 							"syntax": "Packages/JSON/JSON.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 3555.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "/home/abj/Documents/text_docs/time.txt",
+					"buffer": 4,
+					"file": "contest/notes.todo",
+					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 1951,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								397,
+								397
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"plain_tasks_remain_time_phantoms":
+							[
+							],
+							"syntax": "Packages/PlainTasks/PlainTasks.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"stack_multiselect": false,
 					"type": "text"
 				}
-			]
-		},
-		{
-			"sheets":
-			[
-			]
-		},
-		{
-			"sheets":
-			[
 			]
 		}
 	],
@@ -1559,31 +2038,17 @@
 				0,
 				0,
 				1,
-				2
-			],
-			[
-				1,
-				0,
-				2,
 				1
-			],
-			[
-				1,
-				1,
-				2,
-				2
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.745870827651,
 			1.0
 		],
 		"rows":
 		[
 			0.0,
-			0.5,
 			1.0
 		]
 	},
@@ -1658,13 +2123,13 @@
 	},
 	"select_project":
 	{
-		"height": 500.0,
+		"height": 549.0,
 		"last_filter": "",
 		"selected_items":
 		[
 			[
 				"",
-				"~/Downloads/PortfolioAbJ-main/portfolio-heroku.sublime-project"
+				"~/Documents/cp/cp.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -1703,19 +2168,7 @@
 				0,
 				0,
 				1,
-				2
-			],
-			[
-				1,
-				0,
-				2,
 				1
-			],
-			[
-				1,
-				1,
-				2,
-				2
 			]
 		]
 	},

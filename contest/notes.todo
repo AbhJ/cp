@@ -10,6 +10,8 @@ Some points to remember:
 		cat output.txt
 	☐	copy code to clipboard
 		pbcopy < output.txt
+	☐	transfer precompiled header file
+		sudo cp stdc++.h.gch ~/Documents/cp/contest/bits/
 
 Empty files from Terminal:
 	
@@ -25,9 +27,9 @@ Packages I use on VIM for cp:
 
 My sublime build:
 	☐	{                                                                                                                                                                                                                              	
-     	    "cmd": ["g++ -Wall -Wextra -O2 -pthread -H -I . \"${file}\" -o runfile  && timeout 1.5s /usr/bin/time -v ./runfile <input.txt> output.txt && rm runfile"], 
+     	    "cmd": ["g++ -std=c++20 -Wall -Wextra -O2 -pthread -H -I . \"${file}\" -o runfile  && timeout 1.5s /usr/bin/time -v ./runfile <input.txt> output.txt && rm runfile"], 
      	    // above line works fine if input.txt and output.txt files are present in same directory in which .cpp file is present else add complete address of these files for using them as common input output files in your system.
-     	    // have used this to compile headers at /usr/include/x86_64-linux-gnu/c++/9/bits/
+     	    // have used this to compile headers at /usr/include/x86_64-linux-gnu/c++/10/bits/
      	    // sudo g++ -std=c++20 -Wall -Wextra -O2 -o bits -pthread stdc++.h
      	    "shell":true,
      	    "working_dir":"$file_path",
