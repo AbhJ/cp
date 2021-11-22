@@ -8,8 +8,8 @@ int rand(int a, int b) {
 
 int main(int argc, char* argv[]) {
     srand(atoi(argv[1])); // atoi(s) converts an array of chars to int
-    int n = 10;
-
-    cout << rand(5, 8) << " " << rand(5, 8) << " " << rand(1, 5);
+    int n = 100;
+    cout << rand(1, 100);
+    // cout << rand(5, 8) << " " << rand(5, 8) << " " << rand(1, 5);
 }
 
