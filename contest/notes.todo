@@ -29,8 +29,9 @@ My sublime build:
 	☐	{                                                                                                                                                                                                                              	
      	    "cmd": ["g++ -std=c++20 -Wall -Wextra -O2 -pthread -H -I . \"${file}\" -o runfile  && timeout 1.5s /usr/bin/time -v ./runfile <input.txt> output.txt && rm runfile"], 
      	    // above line works fine if input.txt and output.txt files are present in same directory in which .cpp file is present else add complete address of these files for using them as common input output files in your system.
-     	    // have used this to compile headers at /usr/include/x86_64-linux-gnu/c++/10/bits/
+     	    // have used this to compile headers at /usr/include/x86_64-linux-gnu/c++/11/bits/
      	    // sudo g++ -std=c++20 -Wall -Wextra -O2 -o bits -pthread stdc++.h
+			// sometimes after compiling the header, we get a new bits file. Rename it as stdc++.h.gch and keep it in the bits folder of the contest folder.
 			// only one file stdc++.h.gch lives in bits folder
      	    "shell":true,
      	    "working_dir":"$file_path",
