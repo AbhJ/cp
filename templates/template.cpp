@@ -133,8 +133,6 @@ bool topsort() {
 	return false;
 }
 
-
-
 int gcdExtended (int a, int b, int *x, int *y);
 
 // Function to find modulo inverse of b. It returns
@@ -224,7 +222,7 @@ int binomialCoeffUtil (int n, int k, int **dp) {
 	}
 	// save value in lookup table before return
 	dp[n][k] = binomialCoeffUtil (n - 1, k - 1, dp) +
-			   binomialCoeffUtil (n - 1, k, dp);
+	           binomialCoeffUtil (n - 1, k, dp);
 	return dp[n][k];
 }
 
@@ -274,7 +272,7 @@ vvi a;
 //this return pow(A,x) where A is matrix
 vvi matrix_power_final (vvi A, int x) {
 	vvi result (n, vi (n, 0));
-	rep (i, 0, n - 1)result[i][i] = 1;
+	rep (i, 0, n - 1) result[i][i] = 1;
 	while (x) {
 		if (x & 1)
 			result = p (result, A);
@@ -346,7 +344,7 @@ int n;
 int A[N], e[N][N];
 std::vi v;
 void dfs (int x) {
-	if ((int)v.size() > k)
+	if ((int) v.size() > k)
 		return;
 	// if(u[x])return;
 	u[x] = 1;
@@ -781,7 +779,7 @@ int binarySearch (int arr[], int l, int r, int x, int n) {
 	return -1;
 }
 void precompute (int s[], int n, int l[][MAX],
-				 int r[][MAX]) {
+                 int r[][MAX]) {
 	l[s[0]][0] = 1;
 	// Precompute the prefix 2D array
 	for (int i = 1; i < n; i++) {
@@ -800,7 +798,7 @@ void precompute (int s[], int n, int l[][MAX],
 // Find the number of palindromic subsequence of
 // length k
 int countPalindromes (int k, int n, int l[][MAX],
-					  int r[][MAX]) {
+                      int r[][MAX]) {
 	int ans = 0;
 	// If k is 1.
 	if (k == 1) {
