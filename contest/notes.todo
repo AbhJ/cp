@@ -16,6 +16,7 @@ Some points to remember:
 Empty files from Terminal:
 	
 	☐	cat /dev/null > file
+	☐	cat /dev/null > *.txt && cat /dev/null > *.cpp
 
 Packages I use on VIM for cp:
 

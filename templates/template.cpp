@@ -365,26 +365,27 @@ bool is (string str) {
 	}
 	return 1;
 }
-int parent[N], ra[N];
+
 //disjoint set union dsu
+int par[N], siz[N];
 int find_set (int v) {
-	if (v == parent[v])
+	if (v == par[v])
 		return v;
-	return parent[v] = find_set (parent[v]);
+	return par[v] = find_set (par[v]);
 }
 void make_set (int v) {
-	parent[v] = v;
-	ra[v] = 0;
+	par[v] = v;
+	siz[v] = 1;
 }
 void union_sets (int a, int b) {
 	a = find_set (a);
 	b = find_set (b);
 	if (a != b) {
-		if (ra[a] < ra[b])
+		if (siz[a] < siz[b])
 			swap (a, b);
-		parent[b] = a;
-		if (ra[a] == ra[b])
-			ra[a]++;
+		par[b] = a;
+		siz[a] += siz[b];
+		siz[b] = 0;
 	}
 }
 
