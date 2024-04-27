@@ -17,6 +17,10 @@ const int M = 998244353; // modulo
 #define LIM 1LL<<62-1;
 using namespace std;
 
+#define double       long double
+#include <iomanip>
+cout << fixed << std::setprecision (9);
+
 #include <ext/pb_ds/assoc_container.hpp>
 #include <ext/pb_ds/tree_policy.hpp>
 using namespace __gnu_pbds;
