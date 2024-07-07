@@ -26,7 +26,11 @@ cout << fixed << std::setprecision (9);
 using namespace __gnu_pbds;
 template<typename T>
 using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
+// random number
 mt19937 rng (chrono::steady_clock::now().time_since_epoch().count());
+// codeforces likes this
+#include <time.h>
+mt19937 rng (time (NULL));
 int pos = uniform_int_distribution<int> (l, r) (rng);
 int dx[4] = {1, 0, -1, 0}, dy[4] = {0, 1, 0, -1};
 int dx[] = { -2, -1, 1, 2, -2, -1, 1, 2 };
