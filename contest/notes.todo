@@ -28,7 +28,7 @@ Packages I use on VIM for cp:
 
 My sublime build:
 	☐	{                                                                                                                                                                                                                              	
-     	    "cmd": ["g++ -std=c++20 -Wall -Wextra -O2 -pthread -H -I . \"${file}\" -o runfile  && timeout 1.5s /usr/bin/time -v ./runfile <input.txt> output.txt && rm runfile"], 
+     	    "cmd": ["g++ -std=c++20 -include bits/stdc++.h -Wall -Wextra -O2 -pthread -H -I . \"${file}\" -o runfile  && timeout 1.5s /usr/bin/time -v ./runfile <input.txt> output.txt && rm runfile"], 
      	    // above line works fine if input.txt and output.txt files are present in same directory in which .cpp file is present else add complete address of these files for using them as common input output files in your system.
      	    // have used this to compile headers at /usr/include/x86_64-linux-gnu/c++/11/bits/
      	    // sudo g++ -std=c++20 -Wall -Wextra -O2 -o bits -pthread stdc++.h
@@ -41,3 +41,52 @@ My sublime build:
 
 Recursive function:
 	☐	function <int (int, int)> f = [&] (int l, int r) -> int {
+
+Using bits/stdc++.h with Clang
+	☐	To use <bits/stdc++.h> on macOS with Apple Clang, you need to manually create the header file since it is a GCC-specific feature not included by default.
+	☐	Step 1: Create the bits directory and header file globally
+			Run these commands in your terminal to create the directory in the default Clang include path (/usr/local/include):
+			Bash
+			sudo mkdir -p /usr/local/include/bits
+			sudo touch /usr/local/include/bits/stdc++.h
+	☐	Step 2: Add the standard contents
+			Open the file in your preferred editor (or use sudo vi /usr/local/include/bits/stdc++.h) and paste the standard header inclusions:
+
+			#ifndef BITS_STDC_H
+			#define BITS_STDC_H
+
+			#include <iostream>
+			#include <vector>
+			#include <string>
+			#include <algorithm>
+			#include <cmath>
+			#include <map>
+			#include <set>
+			#include <queue>
+			#include <stack>
+			#include <unordered_map>
+			#include <unordered_set>
+			#include <numeric>
+			#include <iomanip>
+			#include <sstream>
+			#include <fstream>
+			#include <bitset>
+			#include <cassert>
+			#include <climits>
+			#include <cstring>
+			#include <cstdio>
+			#include <cstdlib>
+			#include <ctime>
+
+			#endif
+
+			Precompiling bits/stdc++.h on macOS (Clang)
+			Precompiling your header file significantly cuts down build times by generating a binary snapshot of all standard libraries so the compiler doesn't parse them from scratch every time.
+		☐	Step 1: Generate the PCH file
+				Navigate to the directory containing your bits/stdc++.h file and run the following command to compile it into a precompiled header binary:
+					clang++ -std=c++20 -x c++-header bits/stdc++.h -o bits/stdc++.h.pch
+				(Note: Change -std=c++20 to match the standard you use, such as -std=c++17 or -std=c++23).
+		☐	Step 2: Compile your code using the PCH
+				When compiling your source file, use the -include flag to tell Clang to load the precompiled header automatically:
+					clang++ -std=c++20 -include bits/stdc++.h main.cpp -o main
+				Clang will automatically search for bits/stdc++.h.pch next to the header file and load it instantly, bypassing the text-parsing phase.
